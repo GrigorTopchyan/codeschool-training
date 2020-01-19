@@ -9,5 +9,6 @@ public class ExampleWithOperators {
         System.out.print("The value of num is ");
         System.out.println(result);
 
+
     }
 }
