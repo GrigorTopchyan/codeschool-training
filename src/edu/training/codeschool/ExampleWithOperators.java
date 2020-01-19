@@ -8,7 +8,6 @@ public class ExampleWithOperators {
         int result = num + num + 5;
         System.out.print("The value of num is ");
         System.out.println(result);
-12
 
     }
 }
