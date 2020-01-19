@@ -7,5 +7,6 @@ public class ExampleWithOperators {
         System.out.println("the value of num "+num);
         int result = num*num+5;
         System.out.println("the new value is "+result);
+        System.out.println("new string");
     }
 }
