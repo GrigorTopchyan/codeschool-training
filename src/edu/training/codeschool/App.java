@@ -6,6 +6,9 @@ public class App {
         boolean a = false || m();
 
         System.out.println(a);
+
+
+
     }
 
     private static boolean m(){
