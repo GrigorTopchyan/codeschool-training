@@ -1,0 +1,52 @@
+Java setup
+Java versions
+What kind of programs can be written with java
+Platform Independence
+Source code
+Byte code
+Compiler
+How to compile and run java program
+JDK, JRE, JVM
+First Java Application
+Git
+
+
+----------------------------------------
+Comments in java
+How Information is kept in memory
+Variables
+How to declare variable
+How to print in console
+Types in java
+Primitive Types
+    byte
+    short
+    char
+    int
+    float
+    long
+    double
+    boolean
+
+Literals
+
+Type casting
+
+Reference types
+String
+
+Operators in Java
+Assignment operator
+Arithmetic Operators
+Unary Operators
+Complex assignment operators
+Relational operators
+Logical Operators(two forms)
+Bitwise operators
+Ternary operator
+Operators Precedence
+Code block scope
+
+
+
+
