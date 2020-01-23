@@ -12,6 +12,5 @@ public class HomeTask3 {
         else
             System.out.println("The number is even");
 
-
     }
 }
