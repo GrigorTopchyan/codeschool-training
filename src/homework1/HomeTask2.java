@@ -7,5 +7,6 @@ public class HomeTask2 {
         int S = a * b;
         System.out.println("The area of rectangle is " + S +"m");
 
+
     }
 }

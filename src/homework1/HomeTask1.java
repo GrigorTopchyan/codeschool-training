@@ -38,8 +38,5 @@ public class HomeTask1 {
         d4 %= 12;
         System.out.println("d4 =" + d4);
 
-
-
-
     }
 }
