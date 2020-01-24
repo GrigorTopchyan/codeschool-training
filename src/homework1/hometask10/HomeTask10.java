@@ -7,6 +7,7 @@ public class HomeTask10 {
      * Write a Java program to print the sum (addition), multiply of 4 numbers(number1, number2, number3, number4). Go to the editor
      */
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 4 integers: ");
         System.out.println("Number 1: ");

@@ -7,6 +7,7 @@ public class HomeTask1 {
      */
     public static void main(String[] args) {
 
+
         short a = 14;
         short b = 5;
         a += b;

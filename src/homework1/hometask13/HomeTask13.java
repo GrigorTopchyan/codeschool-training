@@ -8,36 +8,38 @@ public class HomeTask13 {
      * ex. 'v' print 'V' or 'V' print 'v'
      */
     public static void main(String[] args) {
-/////////////// program for String////////////////////////////////
-        Scanner scanner = new Scanner(System.in);
-        String lowerCase="";
-        String upperCase="";
-        System.out.println("Enter string: ");
-        String s = scanner.nextLine();
-        for (int i = 0; i < s.length(); i++) {
-            if (Character.isUpperCase(s.charAt(i))) {
+        Scanner scanner1 = new Scanner(System.in);
+        String lowerCase = "";
+        String upperCase = "";
+        System.out.println("Enter Symbol: ");
+        String s = scanner1.nextLine();
 
-                lowerCase = s.toLowerCase();
-            } else {
-                upperCase = s.toUpperCase();
-            }
+        if (Character.isUpperCase(s.charAt(0))) {
+            lowerCase = s.toLowerCase();
+            System.out.println("lowerCase " + lowerCase);
+        } else {
+            upperCase = s.toUpperCase();
+            System.out.println("upperCase " + upperCase);
         }
-        System.out.println( "lowerCase "+ lowerCase);
-        System.out.println( "upperCase "+ upperCase);
+/////////////// program for String////////////////////////////////
 
-//        Scanner scanner1 = new Scanner(System.in);
-//        String lowerCase = "";
-//        String upperCase = "";
-//        System.out.println("Enter Symbol: ");
-//        String s = scanner.nextLine();
+//        Scanner scanner = new Scanner(System.in);
+//        String lowerCase="";
+//        String upperCase="";
 //
-//            if (Character.isUpperCase(s.length())) {
+//        System.out.println("Enter string: ");
+//        String s = scanner.nextLine();
+//        for (int i = 0; i < s.length(); i++) {
+//            if (Character.isUpperCase(s.charAt(i))) {
+//
 //                lowerCase = s.toLowerCase();
-//                System.out.println("lowerCase " + lowerCase);
 //            } else {
 //                upperCase = s.toUpperCase();
-//                System.out.println("upperCase " + upperCase);
 //            }
+//        }
+//        System.out.println( "lowerCase "+ lowerCase);
+//        System.out.println( "upperCase "+ upperCase);
+//
 
 
 

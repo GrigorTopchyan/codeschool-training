@@ -6,6 +6,7 @@ public class HomeTask8 {
      */
     public static void main(String[] args) {
 
+
         double[] numbers =  {0,1.2,-2.5,0.6};
 
         double min = numbers[0];

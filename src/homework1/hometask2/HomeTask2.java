@@ -6,6 +6,7 @@ public class HomeTask2 {
 
      */
 
+
     public static void main(String[] args) {
         int heightOfRectangle = 15;
         int widthOfRectangle = 5;

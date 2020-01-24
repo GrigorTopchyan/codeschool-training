@@ -8,23 +8,43 @@ public class HomeTask16 {
      * Թվերը կարող են լինել int,double,float
      */
     public static void main(String[] args) {
+        calc();
+    }
+
+    public static void calc() {
+        int result;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number 1: ");
-        double number1 = scanner.nextDouble();
-
+        int number1 = scanner.nextInt();
         System.out.println("Enter one of the arithmetic Operators +,-,*,/,% :");
-        String symbol = scanner.nextLine();
-
+        char symbol = scanner.next().charAt(0);
         System.out.println("Enter number 2: ");
-        double number2 = scanner.nextDouble();
-boolean isRightSymbol= true;
-//while (isRightSymbol){
-//    if (symbol.charAt(1)=='+'){
-//        double sum = number1+number2;
-//        System.out.println(sum);
-//    }else {
-//        isRightSymbol=false;
-//    }
-//}
+        int number2 = scanner.nextInt();
+        switch (symbol) {
+            case '+':
+                result = number1 + number2;
+                System.out.println("result: " + result);
+                break;
+            case '-':
+                result = number1 - number2;
+                System.out.println("result: " + result);
+                break;
+            case '*':
+                result = number1 * number2;
+                System.out.println("result: " + result);
+                break;
+            case '/':
+                result = number1 / number2;
+                System.out.println("result: " + result);
+                break;
+            case '%':
+                result = number1 % number2;
+                System.out.println("result: " + result);
+                break;
+            default:
+                System.out.println("Enter parameters again");
+                calc();
+
+        }
     }
 }

@@ -7,6 +7,7 @@ public class HomeTask14 {
      * Write a program in Java to prints the sum and average of given 5 numbers(number1, number2, number3, number4, number5)
      */
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 5 integers: ");
         System.out.println("Number 1: ");
