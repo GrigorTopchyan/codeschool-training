@@ -11,11 +11,18 @@ public class HomeTask6 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a positive integer : ");
         int number = scanner.nextInt();
-        for (int i = 0; i < number; i++) {
-            if (i % 3 == 0 && i % 7 == 0) {
-                System.out.println(i+"  divides into 3 and 7");
+        if (number > 0) {
+            if (number % 3 == 0 && number % 7 == 0) {
 
+                System.out.println(number + " is divides into 3 and 7");
+
+            } else if(number % 3 != 0 && number % 7 != 0){
+                System.out.println("Number isn't divides into 3 and 7");
             }
+
+        } else {
+
+            System.out.println("Enter number >0:");
         }
 
     }

@@ -12,8 +12,8 @@ public class HomeTask15 {
         System.out.println("Enter your weight: ");
         double humanWeight = scanner.nextDouble();
 
-        double gMoon = 0.165;
-        System.out.println(humanWeight*gMoon);
+
+        System.out.println(humanWeight/100*17);
 
     }
 }

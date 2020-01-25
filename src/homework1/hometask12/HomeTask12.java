@@ -20,9 +20,9 @@ public class HomeTask12 {
             System.out.println("Negative");
         }
 
-        if (number < 1) {
+        if (absolutenumber(number) < 1) {
             System.out.println("Small");
-        } else if (number > 1_000_000) {
+        } else if (absolutenumber(number) > 1_000_000) {
             System.out.println("Large");
         }
 
@@ -34,5 +34,12 @@ public class HomeTask12 {
             System.out.println("Is floating-point number");
         }
 
+    }
+
+    public static double absolutenumber(double number){
+        if (number>=0){
+            return number;
+        }
+        return -number;
     }
 }
