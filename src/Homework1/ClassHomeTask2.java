@@ -14,9 +14,9 @@ public class ClassHomeTask2 {
 
 //2 option
         double length = 4.5;
-        double width1 = 8.0;
-        double area = length*width;
-        System.out.println("Area of Rectangle is:"+area);
+        double width2 = 8.0;
+        double area = length*width2;
+        System.out.println("Area of Rectangle is: "+area);
 
 
     }

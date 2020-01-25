@@ -30,10 +30,7 @@ public class ClassHomeTask16 {
             default:
                 System.out.printf("Error! operator is not correct");
         }
-        System.out.printf("%.1f %c %.1f = %.1f", first, operator, second, result);
-
-
-        }
+        System.out.printf( "%.1f %c %.1f = %.1f",first, operator, second, result);
+       }
     }
-
 

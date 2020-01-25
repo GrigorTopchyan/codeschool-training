@@ -15,7 +15,16 @@ public class ClassHomeTask10 {
         int number4 = scanner.nextInt();
 
 
-        System.out.print(number1 + number2 + number3+number4);
+        System.out.print((number1 + number2 + number3 + number4) * number1);
+        System.out.println();
+        System.out.print((number1 + number2 + number3 + number4) * number2);
+        System.out.println();
+        System.out.print((number1 + number2 + number3 + number4) * number3);
+        System.out.println();
+        System.out.print((number1 + number2 + number3 + number4) * number4);
+
+
+
     }
 }
 

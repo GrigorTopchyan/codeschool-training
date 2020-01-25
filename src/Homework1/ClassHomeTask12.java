@@ -10,25 +10,19 @@ public class ClassHomeTask12 {
         System.out.print("Input value: ");
         double d = scanner.nextDouble();
 
-
-        if(d==0){
-            System.out.println("Zero number");
+       if(d>0){
+            System.out.println("positive");
+        } else if(d<0){
+            System.out.println("negative");
         }
-        else if(d>0){
-            if(d<1){
-                System.out.println("positive small number");
-            }
-            else if(d > 1000000){
-                System.out.println("positive large number");
-            }
-            else{System.out.println("positive number");}
+        else{
+            System.out.println("zero");
         }
-
-        else {
-            System.out.println("negative number");
+        if(Math.abs(d)<1){
+            System.out.println("small");
+          }else if(Math.abs(d)>1000000){
+            System.out.println("large");
         }
 
+       }
     }
-}
-
-
