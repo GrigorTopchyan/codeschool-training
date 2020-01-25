@@ -5,5 +5,14 @@ public class HomeTask1 {
         int a = 17;
         int b = 21;
         System.out.println("a+b =" + (a + b));
+        System.out.println("a-b =" + (a - b));
+        System.out.println("a*b =" + (a * b));
+        System.out.println("a/b =" + (a / b));
+        System.out.println("a%b =" + (a + b));
+        System.out.println("a+=b =" + (a += b));
+        System.out.println("a-=b =" + (a -= b));
+        System.out.println("a*=b =" + (a *= b));
+        System.out.println("a/=b =" + (a /= b));
+        System.out.println("a%=b =" + (a %= b));
     }
 }

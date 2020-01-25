@@ -12,7 +12,9 @@ public class HomeTask10 {
         number3 = sc.nextInt();
         number4 = sc.nextInt();
 
-        int sum = number1 * number2 * number3 * number4;
+        int multiply = number1 * number2 * number3 * number4;
+        System.out.println("Multiply = " + multiply);
+        int sum = number1 + number2+ number3 + number4;
         System.out.println("Sum = " + sum);
 
     }
