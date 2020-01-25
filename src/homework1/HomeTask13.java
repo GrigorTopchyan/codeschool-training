@@ -1,5 +1,6 @@
 package homework1;
 
+
 import java.util.Scanner;
 
 public class HomeTask13 {
@@ -10,42 +11,21 @@ public class HomeTask13 {
             System.out.print("number: ");
             double input = in.nextDouble();
 
-            if (input > 0)
-            {
-                if (input < 1)
-                {
-                    System.out.println(" small");
-                }
-                else if (input > 1000000)
-                {
-                    System.out.println(" large");
-                }
-                else
+            if (input == 0) {
+                System.out.println("Zero");
+            }else if (input > 0)
                 {
                     System.out.println(" Positive");
-                }
-            }
-            else if (input < 0)
-            {
-                if (Math.abs(input) < 1)
-                {
-                    System.out.println("Negative small");
-                }
-                else if (Math.abs(input) > 1000000)
-                {
-                    System.out.println(" Negative large");
-                }
-                else
-                {
+                } else if (input < 0) {
                     System.out.println(" Negative");
-                }
+                } else if (input > 1) {
+                    System.out.println(" The module of a number is equal to a number");
+                }else if (input < 1){
+                System.out.println(" The negative module of a number is equal to a number");
             }
-            else
-            {
-                System.out.println(" Zero");
+
+
             }
         }
-
-
     }
-}
+
