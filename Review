@@ -48,5 +48,48 @@ Operators Precedence
 Code block scope
 
 
+if Statement
+if else statement
+Nested if statement
+if - else if statement
+switch case statement
+for loop
+while loop
+do while loop
+Infinite loop
+break continue return
+Arrays in java
+    declare array
+    create array
+    initialize array
+    access array elements
+    array length
+
+Methods in java
+    main method
+    DRY(Don't Repeat Yourself)
+    Why we need methods
+    how to declare methods
+    method naming
+    how to invoke(call) methods
+    method return type
+    method return value
+    method parameters
+
+String methods
+    How to create String
+    length
+    concat
+    charAt
+    startsWith
+    endsWith
+    indexOf
+    subString
+    toLowerCase
+    ToUpperCase
+
+
+
+
 
 
