@@ -20,7 +20,7 @@ public class HomeTask13 {
                     System.out.println(" Negative");
                 } else if (input > 1) {
                     System.out.println(" The module of a number is equal to a number");
-                }else if (input < 1){
+                }else if (input < -1){
                 System.out.println(" The negative module of a number is equal to a number");
             }
 
