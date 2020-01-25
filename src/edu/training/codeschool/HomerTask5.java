@@ -5,10 +5,9 @@ public class HomerTask5 {
         int width = 20;
         int height = 15;
         int area = 0;
-        area=width*height;
-        height=area/width;
-        width=area/height;
-        System.out.println(" area="+width*height + "height ="+area/width + "width =" +area/height) ;
+        double sum=width*height;
+
+        System.out.println("area = " + sum) ;
 
 
     }
