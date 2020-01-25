@@ -31,6 +31,5 @@ public class HomeTask9 {
         float y = 3;
         float D3 = a3 + (b3 / c3 * e1) - (s % y);
         System.out.println("the answer is " + D3);
-
     }
 }
