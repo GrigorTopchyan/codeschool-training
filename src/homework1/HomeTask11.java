@@ -8,6 +8,7 @@ public class HomeTask11 {
         double b = 1;
         double c = 1.0;
         double d ;
+        //Էս for ը չհասկացա խի ես գրել
         for (d = 1.0/3; d <= 11; d = d + 2) ;
         System.out.println( a *(b -(c /d)));
 
