@@ -10,8 +10,8 @@ public class HomeTask15 {
         float sum = number1 + number2 + number3 + number4 + number5;
         System.out.println("The sum of given 5 numbers is "+ sum);
         //փոփոխականի անունը avarage կարաս դնես min -ը էտ մինիմոմնա
-        float min= sum / 5;
-        System.out.println("The average of given 5 numbers is "+ min);
+        float avarage= sum / 5;
+        System.out.println("The average of given 5 numbers is "+ avarage);
 
     }
 }
