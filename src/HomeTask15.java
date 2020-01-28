@@ -1,4 +1,4 @@
-public class HomeTask14 {
+public class HomeTask15 {
     public static void main(String[] args) {
         int number1 = 3;
         int number2 = 4;

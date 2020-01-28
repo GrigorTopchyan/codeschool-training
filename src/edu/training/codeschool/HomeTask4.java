@@ -18,6 +18,5 @@ public class HomeTask4 {
         System.out.println(a + " * 8 = " +8*a);
         System.out.println(a + " * 9 = " + 9*a);
 
-
     }
 }
