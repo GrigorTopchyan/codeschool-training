@@ -7,22 +7,22 @@ public class HomeTask9 {
         int b = 8;
         int c = 6;
         //փոփողականի անունը փոքրատառով պիտի սկսվի (CamelCase)
-        int D = a + b * c;
-        System.out.println("the answer is " + D);
+        int d = a + b * c;
+        System.out.println("the answer is " + d);
 
 //        b. (55+9) % 9
         int a1 = 55;
         int b1 = 9;
         int c1 = 9;
-        int D1 = (a1 + b1) % c1;
-        System.out.println("the answer is " + D1);
+        int d1 = (a1 + b1) % c1;
+        System.out.println("the answer is " + d1);
 //        c. 20 + -3*5 / 8
         double a2 = 20;
         double b2 = -3;
         double c2 = 5;
         double e = 8;
-        double D2 = a2 + b2 * c2 / e;
-        System.out.println("the answer is " + D2);
+        double d2 = a2 + b2 * c2 / e;
+        System.out.println("the answer is " + d2);
 //        d. 5 + 15 / 3 * 2 - 8 % 3
         float a3 = 5;
         float b3 = 15;
@@ -30,7 +30,7 @@ public class HomeTask9 {
         float e1 = 2;
         float s = 8;
         float y = 3;
-        float D3 = a3 + (b3 / c3 * e1) - (s % y);
-        System.out.println("the answer is " + D3);
+        float d3 = a3 + (b3 / c3 * e1) - (s % y);
+        System.out.println("the answer is " + d3);
     }
 }
