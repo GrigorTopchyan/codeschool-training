@@ -6,6 +6,7 @@ public class HomeTask9 {
         int a = -5;
         int b = 8;
         int c = 6;
+        //փոփողականի անունը փոքրատառով պիտի սկսվի (CamelCase)
         int D = a + b * c;
         System.out.println("the answer is " + D);
 
