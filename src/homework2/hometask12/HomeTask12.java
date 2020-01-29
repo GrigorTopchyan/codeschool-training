@@ -11,11 +11,13 @@ public class HomeTask12 {
 
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 5, 5, 6, 6, 7, 2};
+        int[] array = {1, 2, 5, 5, 6, 1, 7, 2};
         for (int i = 0; i < array.length - 1 ; i++) {
-            if (array[i+1]==array[i]){
-                System.out.println("Duplicate value is: " +array[i]);
+            for (int j = 0; j < array.length-1; j++) {
+       ////////////////////////////////////////////////////////
+
             }
+
         }
     }
 }
