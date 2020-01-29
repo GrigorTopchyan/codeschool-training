@@ -1,4 +1,4 @@
-package edu.training.codeschool;
+package homework1;
 
 import org.w3c.dom.ls.LSOutput;
 

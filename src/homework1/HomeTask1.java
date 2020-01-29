@@ -1,4 +1,4 @@
-package edu.training.codeschool;
+package homework1;
 
 public class HomeTask1 {
     public static void main(String[] args) {

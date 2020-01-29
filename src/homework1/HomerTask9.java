@@ -1,4 +1,4 @@
-package edu.training.codeschool;
+package homework1;
 
 public class HomerTask9 {
     public static void main(String[] args) {
