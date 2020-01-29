@@ -1,3 +1,5 @@
+package HomeWork1;
+
 public class Homtask10 {
     public static void main(String[] args) {
         int number1 = 5;

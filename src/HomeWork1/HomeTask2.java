@@ -1,3 +1,5 @@
+package HomeWork1;
+
 public class HomeTask2 {
     public static void main(String[] args) {
         int height = 5;

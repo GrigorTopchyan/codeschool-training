@@ -1,4 +1,4 @@
-package edu.training.codeschool;
+package HomeWork1;
 
 import java.util.Scanner;
 
