@@ -1,13 +1,22 @@
 package homework1;
 
+import java.util.Scanner;
+
 public class HomeTask7 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        int a = 150;
-        boolean b = a % 5 == 0;
-        boolean c = a % 6 == 0;
-        boolean d = b || c;
-        System.out.println(d);
+        Scanner scanner = new Scanner(System.in);
+        int scan = scanner.nextInt();
+        if (scan % 5 == 0 || scan % 6 == 0) {
+            if (scan % 3 == 0)
+                System.out.println("The number is divides 5");
+            else if (scan % 7 == 0)
+                System.out.println("The number is divides 6");
+        } else {
+            System.out.println("The number doesn`t divides onto 5 and 6");
+        }
 
-    }
-}
+            }
+        }
+
+
