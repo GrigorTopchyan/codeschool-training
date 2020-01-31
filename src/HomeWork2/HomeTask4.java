@@ -7,9 +7,10 @@ public class HomeTask4 {
         boolean b = true;
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        if (n<=0||n==1){
+        if (n <= 0 || n == 1) {
             System.out.println("The number not Prime");
-            return;}
+            return;
+        }
         for (int i = 2; i <= n / 2; i++) {
             if (n % i == 0) {
                 b = false;
@@ -17,11 +18,11 @@ public class HomeTask4 {
 
             }
         }
-            if (b) {
-                System.out.println("The number  Prime");
-            } else {
-                System.out.println(" The number not Prime");
-            }
+        if (b) {
+            System.out.println("The number  Prime");
+        } else {
+            System.out.println(" The number not Prime");
         }
-
     }
+
+}

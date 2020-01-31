@@ -1,6 +1,6 @@
 package HomeWork2;
 
-public class HomeTask10 {
+public class HomeTask17false {
     public static void main(String[] args) {
         int[] array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
         int max = array[0];
@@ -13,7 +13,13 @@ public class HomeTask10 {
             }
 
         }
-        System.out.println("Max = " + max);
-        System.out.println("Min = " + min);
+        for (int j =0;j<array.length;j++){
+            for(int f =0;f<array.length;f++){
+            if(array[f]<array[j]&&array[j]<max){
+                System.out.println("Ddd");
+            }
+        }
     }
+
+}
 }

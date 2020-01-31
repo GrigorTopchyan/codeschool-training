@@ -7,9 +7,9 @@ public class HomeTask3 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int m = scanner.nextInt();
-        int pow=1;
-        for (int i =0;i<m;i++){
-            pow= pow * n;
+        int pow = 1;
+        for (int i = 0; i < m; i++) {
+            pow = pow * n;
 
         }
         System.out.println(pow);
