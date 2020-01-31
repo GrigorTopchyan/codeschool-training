@@ -60,9 +60,16 @@ public class Employee {
     }
 
     public double getAnnualSalary() {
+
         return MONTH_OF_YEAR * getSalary();
     }
-    public void raiseSalary(int percent){
+
+    public void raiseSalary(int percent) {
+
+        double getPercent = getAnnualSalary()/100 * percent;
+        double salaryAfterRaise = getPercent + getAnnualSalary();
+        System.out.println("Annual salary after a raise on "+percent+ " = "+salaryAfterRaise );
+
 
     }
 
