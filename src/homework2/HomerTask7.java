@@ -17,8 +17,7 @@ public class HomerTask7 {
                 System.out.println(n);
             } else {
             }
-            System.out.println("The array does not contain the value")
-        } break
+            System.out.println("The array does not contain the value");
+        }
     }
-}
 }
