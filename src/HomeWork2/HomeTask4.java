@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class HomeTask4 {
     public static void main(String[] args) {
+        //փոփոխականի անունը b ի տեղը կարա isPrime լինի
         boolean b = true;
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
