@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class HomeTask8 {
     public static void main(String[] args) {
         int[] array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
+        //int[] array1 = new int[array.length]; սենց ավելի ճիշտա
         int[] array1 = new int[10];
         System.out.println("Before remove index four ");
         for (int i = 0; i < array.length; i++) {
@@ -18,12 +19,11 @@ public class HomeTask8 {
         }
         System.out.println();
         System.out.println("After remove index four");
+        //Էսի սխալ ես գրել փորձի ողղես
         for (int c = array1[4]; c <= array1.length - 1; c++) {
             array[c] = array[c + 1];
             System.out.print(Arrays.asList(c) + ",");
 
         }
-
-
     }
 }
