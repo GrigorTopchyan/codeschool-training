@@ -18,7 +18,7 @@ public class Date {
     }
 
     public void setDay(int day) {
-        if (day > 31 || day < 1) {
+        if (day > 31 && day < 1) {
             System.out.println("Day can't be > than 31 or < than 1");
         } else {
 
@@ -32,7 +32,7 @@ public class Date {
     }
 
     public void setMonth(int month) {
-        if (month > 12 || month < 1) {
+        if (month > 12 && month < 1) {
             System.out.println("Month can't be > than 12 or < than 1");
         } else {
             this.month = month;
@@ -44,7 +44,7 @@ public class Date {
     }
 
     public void setYear(int year) {
-        if (year < 1 || year == 0) {
+        if (year < 1 && year == 0) {
             System.out.println("Year can't be negative or 0");
         } else {
             this.year = year;
@@ -60,7 +60,7 @@ public class Date {
 
     public String plusDays(int days) {
         int sumDays = getDay() + days;
-        if (sumDays > 31 || sumDays < 1) {
+        if (sumDays <= 0 || sumDays > 31) {
             System.out.println("Day can't be > than 31 or < than 1");
             return "[ " + 0 + "0" + " / " + 0 + "0" + " / " + 0 + "0" + " ]";
         }
@@ -71,9 +71,14 @@ public class Date {
 
     @Override
     public String toString() {
-        if (getDay() > 0 && getDay() < 10 && getMonth() > 0 && getMonth() < 10) {
-            return "[ " + getYear() + " / " + 0 + "" + getMonth() + " / " + 0 + "" + getDay() + " ]";
+        if (getDay() >= 1 && getDay() < 10 && getMonth() >= 1 && getMonth() < 10) {
+            return "[ " + getYear() + " / " + "0" + getMonth() + " / " + "0" + getDay() + " ]";
+        } else if (!(getDay() >= 1 && getDay() < 10) && (getMonth() >= 1 && getMonth() < 10)) {
+            return "[ " + getYear() + " / " +"0"+ getMonth() + " / "  + getDay() + " ]";
+        } else if ((getDay() >= 1 && getDay() < 10) && !(getMonth() >= 1 && getMonth() < 10)) {
+            return "[ " + getYear() + " / " + getMonth() + " / "+"0" + getDay() + " ]";
+        }else {
+            return "[ " + getYear() + " / " + getMonth() + " / " + getDay() + " ]";
         }
-        return "[ " + getYear() + " / " + getMonth() + " / " + getDay() + " ]";
     }
 }
