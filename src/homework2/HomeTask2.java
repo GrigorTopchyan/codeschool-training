@@ -11,6 +11,9 @@ public class HomeTask2 {
         System.out.println("Factorial = " + factorial);
     }
 
+    //Էս ինչ որ տեղից օգտվել ե՞ս
+    //հասկացել ես ոնցա աշխատու՞մ
+    //սենց մի գրի փոխի for ով գրի
     static int fact(int n) {
         int number;
         if (n == 1) {

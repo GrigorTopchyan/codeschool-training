@@ -7,6 +7,8 @@ public class HomeTask19 {
 
         int[] arr = {1,2,3,4,5,6};
         int[] arr1= {1,2,3,4,5,6};
+        //մի օգտագործի java ի ստանդարտ գրադարանները
+        //Փորձի դու գրես
         if (Arrays.equals(arr, arr1)) {
             System.out.println("equal");
         }else System.out.println("not equal");

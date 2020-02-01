@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class HomeTask11 {
     public static void main(String[] args) {
 
+        //Խնդիրը սենց չի էս որտեղից ես վերցրել
+        //խնդրում արրայի համարա պահանջը
+        //Փոխի
         int array=123456;
         System.out.println(array);
         int reversenum = 0;
