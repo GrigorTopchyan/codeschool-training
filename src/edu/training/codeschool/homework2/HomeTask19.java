@@ -8,6 +8,8 @@ public class HomeTask19 {
         int[] arr1 = {2, 3, 4};
         int[] arr2 = {1, 2};
         int[] arr3 = {1, 2};
+        //մի օգտագործի java ի ստանդարդ գրադարանը
+        //Դու գրի for ով
         System.out.println(Arrays.equals(arr, arr1));
         System.out.println(Arrays.equals(arr, arr2));
         System.out.println(Arrays.equals(arr, arr3));

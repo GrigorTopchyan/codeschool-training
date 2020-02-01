@@ -10,6 +10,8 @@ public class HomeTask3 {
         Scanner scanner1 = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner1.nextInt();
+        //Պետք չի ջավայի ստանդարդ գրադարանից օգտվել
+        //դու գրի for ով
         Math.pow(a, b);
         System.out.println(Math.pow(a, b));
 

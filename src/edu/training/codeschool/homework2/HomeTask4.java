@@ -21,6 +21,7 @@ public class HomeTask4 {
             }
 
         }
+        //էսի միշտ կտպի եթե prime էլ չլնի, ուղղի
         System.out.println("The number is prime");
     }
 }
