@@ -17,6 +17,8 @@ public class HomeTask20 {
             sum += arr[i];
         }
 
+        //Պետք չի նոր արայ սարքես արժեքավորես 1, n նոր գումար հաշվես
+        //կարաս ողղակի sum1 += j;
         for (int j = 0; j <= arr1.length - 1; j++) {
             arr1[j] = j;
             sum1 += arr1[j];

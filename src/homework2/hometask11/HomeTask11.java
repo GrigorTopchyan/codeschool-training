@@ -7,6 +7,9 @@ public class HomeTask11 {
      */
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6};
+
+        //Ստեղ դու ուղղակի տպել ես պիտի արրայի մեջ փոխես,
+        //այսինքն արրայի էլեմենտները վերջում պիտի հակառակ լինենե
         for (int arr : array) {
             System.out.print(" " + arr + " ");
 

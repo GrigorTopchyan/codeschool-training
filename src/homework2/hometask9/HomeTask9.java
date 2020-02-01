@@ -10,6 +10,7 @@ public class HomeTask9 {
         int[] array2 = new int[array.length];
         for (int i = 0; i <=array.length-1 ; i++) {
             array2[i]=array[i];
+            //for ի մեջ մի տպի վերջում կարաս տպես երկու արայները, բայց պահանջի մեջ չկա
             System.out.println(array2[i]);
         }
     }
