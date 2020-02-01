@@ -4,6 +4,8 @@ public class HomeTask1 {
     public static void main(String[] args) {
         int sum = 0;
         int i = 0;
+        //Պետք չի արայ սարքել
+        //կարաս հենց x ի հետ աշխատես
         int[] arr = new int[1_000_000];
         for (int x = 1; x <= arr.length; x++) {
 
