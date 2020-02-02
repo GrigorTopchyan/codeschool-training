@@ -12,6 +12,9 @@ public class HomeTask8 {
         System.out.println("Resultant Array: " + Arrays.toString(array));
 
     }
+    //Ճիշտ ես գրել
+    //բայց ինչ որ տեղից օգտվել ես
+    //Վստահ եղի որ ինչ գրել ես հասկանում ես
     public static int[] removeTheElement(int[] arr, int index)
     {
         if (arr == null
