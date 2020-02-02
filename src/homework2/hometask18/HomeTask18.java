@@ -10,6 +10,7 @@ boolean[] arr = {true, false, false, false, true, false,true, false, true, false
 int countOfTrue=0;
 int countOfFalse=0;
         for (int i = 0; i <=arr.length-1 ; i++) {
+            //Պետք չի ստուգես arr[i]==true եթե true ա ուրեմն կմտնի if ի մեջ
             if (arr[i]==true){
                 countOfTrue++;
             }else  {

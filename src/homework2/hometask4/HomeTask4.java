@@ -17,6 +17,7 @@ public class HomeTask4 {
             System.out.println(number);
         }
 
-////not
+        //Էս նայել էինք շուտ for ով պիտի անեք
+        //n թիվը պարզա եթե ինքը չի բաժանվում [2 - n/2] միջակայքից ոչ մեկի վրա
     }
 }

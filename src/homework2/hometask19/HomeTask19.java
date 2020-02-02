@@ -10,6 +10,7 @@ public class HomeTask19 {
     public static void main(String[] args) {
         int[] arr1 = {1,2,5,3,6,4,3};
         int[] arr2 = {1,2,5,3,6,4,3};
+        //մի օգտագործի եղած ջավայի գրադարանը փորձի դու գրես
         System.out.println(Arrays.equals(arr1,arr2));
         }
     }

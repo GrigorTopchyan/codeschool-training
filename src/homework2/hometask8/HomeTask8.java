@@ -9,6 +9,8 @@ public class HomeTask8 {
      * Print the array before and after removal of the element
      */
     public static void main(String[] args) {
+
+        //Էս դզի անցած դասին նայեցինք։ Դու ստեղ remove չես անում
         int[] array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
         int index =4;
         for (int i = 0; i <= array.length - 1; i++) {

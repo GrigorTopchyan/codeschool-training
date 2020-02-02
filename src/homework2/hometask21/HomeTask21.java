@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class HomeTask21 {
     /**
      * 21.  Write a Java program to compute the average value of an array of integers except the largest and smallest values
+     Հիշացրու դասի վախտ նայենք
      */
     public static void main(String[] args) {
 //        int[] arr = {1, 2, 3, 4, 7, 8};

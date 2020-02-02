@@ -12,8 +12,10 @@ public class HomeTask5 {
         double x = 0.0;
         System.out.println("Enter number: ");
         double n = scanner.nextDouble();
-        for (double i = 1; i < n; i++) {
-            x = x + 1 / i;
+        //for ի մեջ աշխատեք double չոգտագործեք
+        //կարար սենց լիներ
+        for (int i = 1; i < n; i++) {
+            x = x + 1.0 / i;
         }
         System.out.println(x);
     }

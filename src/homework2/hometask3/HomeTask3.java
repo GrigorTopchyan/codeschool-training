@@ -10,6 +10,7 @@ public class HomeTask3 {
      */
     public static void main(String[] args) {
 
+        //m ֊ի  n ֊ ի տիպերը թող int լինեն
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number 1:");
         double n1 = scanner.nextDouble();
