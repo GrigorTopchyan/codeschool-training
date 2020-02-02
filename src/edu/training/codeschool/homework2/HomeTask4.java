@@ -18,10 +18,8 @@ public class HomeTask4 {
                 isPrime = false;
                 System.out.println("The number isn`t prime");
                 break;
-            }
-
+            } else //էսի միշտ կտպի եթե prime էլ չլնի, ուղղի
+                System.out.println("The number is prime");
         }
-        //էսի միշտ կտպի եթե prime էլ չլնի, ուղղի
-        System.out.println("The number is prime");
     }
 }
