@@ -7,7 +7,9 @@ public class Employee {
     private String lastName;
     private double salary;
 
-    public  Employee(int id,String firstName,String lastName,double salary){}
+    public  Employee(int id,String firstName,String lastName,double salary){
+        this.id = id;
+    }
 
 
     public int getId() {
