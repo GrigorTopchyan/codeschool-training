@@ -14,12 +14,12 @@ public class HomeTask7 {
         int[] array = {1, 25, 8, 6, 4, 5, 56, 55, 8, 68, 45, 62, 66, 82, 63, 33, 3, 7, 71, 32};
         for (int i = 0; i < array.length; i++) {
             if (t = array[i] == n)
+                //return անելուց մեթոդից դւրսա գալու, իսկ պահանջվումա տպել ինդեքսը եթե թիվը կա արայի մեջ
                 return;
 
 
         }
         System.out.println("The array does not contain the value");
-
     }
 }
 

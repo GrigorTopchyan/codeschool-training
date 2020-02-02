@@ -8,6 +8,8 @@ public class HomeTask19 {
         int[] array1 = {0, 2, 7, 8, 9};
         int[] array2 = {7, 8, 10, 5,};
         int[] array3 = {0, 2, 7, 8, 9};
+        //Երկու արայի համար պիտի ստւգեիր
+        //պետք չի ամեն անգամ array1.length == array2.length էլ ստւգես մի անգամ ստւգես հերիքա
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array2.length; j++) {
                 for (int k = 0; k < array3.length; k++) {

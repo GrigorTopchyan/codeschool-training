@@ -11,11 +11,7 @@ public class HomeTask6 {
         for (int i = 0; i < array.length; i++) {
             sum = (sum + array[i]);
             sumOfAverageValue = sum / array.length;
-
         }
         System.out.println(sumOfAverageValue);
-
     }
-
-
 }
