@@ -40,17 +40,17 @@ public class Account {
         return balance;
     }
 
-    public double credit(double amount) {
+    public double debit(double amount) {
         if (amount < 0) {
             System.out.println("Enter positive amount");
             return 0;
         }else {
-            this.balance=getBalance() + amount;
+            this.balance+=  amount;
             return this.balance;
         }
     }
 
-    public double debit(double amount) {
+    public double credit(double amount) {
         if (amount > getBalance()) {
             System.out.println("Sorry you can't withdraw more than your balance");
 
@@ -58,7 +58,7 @@ public class Account {
             System.out.println("Enter positive amount");
             this.balance=0;
         }else {
-            this.balance=getBalance() + amount;
+            this.balance-=  amount;
             return this.balance;
         }
 
@@ -69,7 +69,7 @@ public class Account {
     public void transferTo(Account otherAccount, double amount) {
 
         System.out.println("You send " + otherAccount.getName() + " " + amount + "$");
-        System.out.println("You balance = " + debit(amount) + "$");
+        System.out.println("You balance = " + credit(amount) + "$");
     }
 
     @Override
