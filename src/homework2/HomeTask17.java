@@ -1,17 +1,22 @@
 package homework2;
 
-import java.util.Arrays;
-
 public class HomeTask17 {
     public static void main(String[] args) {
 
         int array[] = {10, 20, 25, 63, 96, 57};
-        System.out.println(" Array :" + Arrays.toString(array));
-        //Սենց սխալ ես գրելպիտի for ով ֆռաս գտնես
-        //Փորձի ուղղես
-        int x = array[1];
-        int y = array[3];
-        System.out.println("second smallest :" + x);
-        System.out.println("second largest :" + y);
+        int x = array[0];
+        int y = array[0];
+        int streamline;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] < array[j]) {
+                    streamline = array[i];
+                    array[i] = array[j];
+                    array[j] = streamline;
+                }
+            }
+        }
+        System.out.println(array[1]);
+        System.out.println(array[4]);
     }
 }

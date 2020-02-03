@@ -1,18 +1,31 @@
 package homework2;
 
-import java.util.Arrays;
-
 public class HomeTask19 {
+
     public static void main(String[] args){
 
-        int[] arr = {1,2,3,4,5,6};
-        int[] arr1= {1,2,3,4,5,6};
-        //մի օգտագործի java ի ստանդարտ գրադարանները
-        //Փորձի դու գրես
-        if (Arrays.equals(arr, arr1)) {
-            System.out.println("equal");
-        }else System.out.println("not equal");
-
+        int[] array = {1,2,3,4,5,6};
+        int[] array1= {1,2,3,4,5,6};
+        boolean equalOrNot = true;
+        if(array.length == array1.length) {
+            for (int i = 0; i < array.length; i++) {
+                if(array[i] != array1[i]) {
+                    equalOrNot = false;
+                }
+            }
+        } else {
+            equalOrNot = false;
+        }if (equalOrNot) {
+            System.out.println(" Equal");
+        } else {
+            System.out.println("Not equal");
         }
     }
+
+}
+
+
+
+
+
 

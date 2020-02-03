@@ -1,22 +1,12 @@
 package homework2;
 
-import java.util.Scanner;
-
 public class HomeTask11 {
     public static void main(String[] args) {
 
-        //Խնդիրը սենց չի էս որտեղից ես վերցրել
-        //խնդրում արրայի համարա պահանջը
-        //Փոխի
-        int array=123456;
-        System.out.println(array);
-        int reversenum = 0;
-        while( array != 0 ) {
-            reversenum = reversenum * 10;
-            reversenum = reversenum + array % 10;
-            array = array / 10;
+        int[] array = {1,2,3,4,5,6};
+        int[] array1 =new int [6];
+        for (int i = array.length ; i >=(array.length / 2 - 2); i--) {
+            System.out.print(i+",");
         }
-
-        System.out.println(reversenum);
     }
 }
