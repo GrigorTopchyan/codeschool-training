@@ -9,8 +9,9 @@ public class HomeTask6 {
         for (int i =0 ; i < array.length;i++){
             sum = (array[i] +sum);
             //Էս կարաս վերջում գրես for ից հետո, որ ամեն անգամ չհաշվի average մի անգամ հաշվի
-            averageValue = sum /array.length;
-            System.out.println(averageValue);
-        }
+
+
+        }averageValue = sum /array.length;
+        System.out.println(averageValue);
     }
 }

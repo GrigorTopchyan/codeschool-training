@@ -9,10 +9,11 @@ public class HomeTask7 {
         int[] array = {1, 25, 8, 6, 4, 5, 56, 55, 8, 68, 45, 62, 66, 82, 63, 33, 3, 7, 71, 32};
         //պահանջը ասումա պարզել տրված թիվը արայում կա թէ չէ ու եթե կա որ ինդեքսումա
         //սենց սխալա աշխատում փորձի ուղղես
-        if (n < array.length) {
-            System.out.println(array[n]);
-        } else {
-            System.out.println("The array does not contain the value");
-        }
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == n) {
+                System.out.println("The array contain " + n + " index = " + i);
+            }
+
+        }System.out.println("The array does not contain the value");
     }
 }

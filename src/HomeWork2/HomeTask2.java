@@ -11,11 +11,11 @@ public class HomeTask2 {
         int n = scanner.nextInt();
         //Փոփոխականների աննունները աշխատի իմաստալից դնես
         //օրինակ ստեղ a ի տեղը կարաս գրես factorial
-        int a = 1;
+        int factorial = 1;
         for (int i = 1; i <= n; i++) {
-            a = a * i;
+            factorial = factorial * i;
         }
-        System.out.println(a);
+        System.out.println(factorial);
 
 
     }
