@@ -39,6 +39,7 @@ public class Circle {
 
     public double getArea() {
         System.out.print("circle area = ");
+        //դաշտերը ստեղ հասանելի են միանգամից կարաս դիմես պետք չի մեթոդներով դիմես
         return PI * (getRadius()*getRadius());
     }
 

@@ -17,6 +17,7 @@ public class Author {
     private String email;
     private Date birdDate;
     private String gender;
+    //Էս ինչ author դաշտա
     private Author author;
 
     public Author(String name, String email, Date birdDate, String gender) {

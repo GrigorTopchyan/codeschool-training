@@ -65,7 +65,7 @@ public class Employee {
     }
 
     public void raiseSalary(int percent) {
-
+        //պիտի տվյալ employee ի սալարին ավելացնես ոչ թե տպես
         double getPercent = getAnnualSalary()/100 * percent;
         double salaryAfterRaise = getPercent + getAnnualSalary();
         System.out.println("Annual salary after a raise on "+percent+ " = "+salaryAfterRaise );
