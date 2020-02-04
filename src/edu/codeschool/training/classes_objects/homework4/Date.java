@@ -30,6 +30,7 @@ public class Date {
     }
 
 
+    //Վալիդացիաներ արա կոնստռուկտորի ու սեթեր մեթոդների համար
     public Date(int day, int month, int year) {
         this.day = day;
         this.month = month;
@@ -44,10 +45,12 @@ public class Date {
         this.year = year;
     }
 
+    //Պիտի գումարի տվյալ օբյեկտի(this) դաշտին ոչ թէ ուղղակի վերադարձնի
     public int plusYear(int year){
         return year * 2;
     }
 
+    //Պիտի գումարի տվյալ օբյեկտի(this) դաշտին ոչ թէ ուղղակի վերադարձնի
     public int plusDay(int day){
         return day * 3;
     }

@@ -7,6 +7,8 @@ public class Author {
     private String name;
     private String email;
 
+    //birthDate դաշտը չկա
+
 
     public String getName() {
         return name;
@@ -42,6 +44,7 @@ public class Author {
 
     }
 
+    //Ստեղ խնդրի պահանջի մեջ պրոբլեմ կար դզել եմ էս մեթոդը պիտի Book ի մեջ լինի
     public String getAuthorName(){
         return name;
     }

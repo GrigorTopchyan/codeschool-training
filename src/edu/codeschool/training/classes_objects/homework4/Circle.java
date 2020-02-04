@@ -2,7 +2,9 @@ package edu.codeschool.training.classes_objects.homework4;
 
 public class Circle {
 
+    //color - ը default արժեք պիտի ունենա
     private String color;
+    //radius - ը default արժեք պիտի ունենա
     private double radius;
 
 
