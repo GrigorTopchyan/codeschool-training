@@ -11,5 +11,7 @@ public class TestAuthor {
 
         System.out.println("Aftror of book is :" + book.getAuthor());
 
+        //որ Book ը դզես էս էլ կուղղես
+
     }
 }

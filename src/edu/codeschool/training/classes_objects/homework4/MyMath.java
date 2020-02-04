@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class MyMath {
 
+    //պիտի ամեն պահանաջի համար մեթոդ սարքեիր որ կստանան արայը որպես պարամետեր
+    //փոխի մեթոդներով սարքի
     public static void main(String[] args) {
 
         int[] arr = {23, 34, 25, 67, 34, 2, 456, 76};

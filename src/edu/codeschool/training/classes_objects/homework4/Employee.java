@@ -2,14 +2,10 @@ package edu.codeschool.training.classes_objects.homework4;
 
 public class Employee {
 
-
-
     private String firstName;
     private int id;
     private String lastName;
     private double salary;
-
-
 
     public int getId() {
         return id;
@@ -56,19 +52,21 @@ public class Employee {
         this.salary = salary;
     }
 
-
-    public double getAnnualSalary(){
+    // կլասսի դաշտերին դիմելիս this օգտագործի
+    // խի 24 ?
+    public double getAnnualSalary() {
         return salary * 24;
     }
 
-    public double raiseSalary(){
+    //Էս պիտի percent պարամետեր ստանա ու բարձրացնի salary ին էտ տոկոսով
+    public double raiseSalary() {
         return salary + 300;
     }
 
-   public String toString(){
-        return  firstName  + lastName + id + salary;
+    //սիրունացրու
+    public String toString() {
+        return firstName + lastName + id + salary;
     }
-
 
 
 }

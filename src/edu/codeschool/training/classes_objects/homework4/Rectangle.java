@@ -2,7 +2,8 @@ package edu.codeschool.training.classes_objects.homework4;
 
 public class Rectangle {
 
-
+    //դաշտերը պիտի լինեն package private ոչ թե private
+    //դաշտերը պիտի default արժեքներ ունենան
     private float length, width;
 
 

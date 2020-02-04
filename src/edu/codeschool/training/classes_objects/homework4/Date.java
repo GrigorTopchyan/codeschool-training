@@ -51,6 +51,7 @@ public class Date {
     }
 
     //Պիտի գումարի տվյալ օբյեկտի(this) դաշտին ոչ թէ ուղղակի վերադարձնի
+    //Պիտի ստուգես եթե գումարը 31 ից անցավ պիտի ամիսը ավելացնես, նույն ձև ամսվա համար պիտի ստուգես
     public int plusDay(int day){
         return day * 3;
     }
@@ -71,6 +72,9 @@ public class Date {
 //    }
 
 
+    //Սենց մեթոդ չկա պահանջի մեջ
+    //թող մեթոդը պարամետեր ստանա ինչքան պիտի ավելացնի
+    //մեթոդի մեջ պետք չի տպել մեթոդտ մենակ ավելացնելու համարա պատասխանատու
     public void increaseYear(){
         int years = year + 5;
         int months = month;
@@ -78,6 +82,7 @@ public class Date {
         System.out.println("Increase the date by 5 year :"+years+"/"+months+"/"+days);
     }
 
+    //Սենց մեթոդ չկա պահանջի մեջ
      public void increaseDate(){
          int years2 = year;
          int months2 = month;

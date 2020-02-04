@@ -7,7 +7,7 @@ public class TestAccount {
         Account account1 = new Account(100,"id","John");
         Account account2 = new Account(200,"id2","Bob");
 
-
+        //որ Account կլասսը դզես սաղ մեթոդները տեստ արա տես ճիշտա աշխատում
 
 
     }
