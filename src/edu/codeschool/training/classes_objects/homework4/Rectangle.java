@@ -26,14 +26,12 @@ public class Rectangle {
     }
     public float calcArea(float length,float width){
         float calculateArea = length * width;
-        //Պետք չի տպել
-        System.out.println("Area = " + calculateArea);
+
         return calculateArea;
     }
     public float calcPerimeter(float length,float width){
         float calcPerimeter = 2 * (length + width);
-        //Պետք չի տպել
-        System.out.println("Perimeter = " + calcPerimeter);
+
         return calcPerimeter;
     }
     }
