@@ -2,7 +2,7 @@ package homework4;
 
 import java.util.Arrays;
 
-public class ArrSort {
+public class BigArrayMakerAndSorter {
 
     /**
      *
@@ -19,16 +19,16 @@ public class ArrSort {
             bigArr[i+i + 1] = ints[i];
 
         }
-        boolean isOk= true;
-        while (isOk) {
-            isOk=false;
+        boolean isSorted= true;
+        while (isSorted) {
+            isSorted=false;
             for (int i = 0; i < bigArr.length - 1; i++) {
                 int x = bigArr[i ];
                 if (bigArr[i] > bigArr[i + 1]) {
 
                     bigArr[i ] = bigArr[i+1];
                     bigArr[i+1] = x;
-                    isOk=true;
+                    isSorted=true;
                 }
 
             }

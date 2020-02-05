@@ -3,22 +3,23 @@ package homework4;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class MakeArr {
+public class ArrayMaker {
     /**
      * 2.0 Գրել ծրագիր, որը մուտքագրված թիվը կդարձնի արայ
      * Օրինակ․ 5678 -> [5,6,7,8]
      * 23 -> [2,3]
      */
     public static void main(String[] args) {
-        int x = 5678;
-        int y =0;
-        char[] z = String.valueOf(x).toCharArray();
+
+        int num = 5678;
+        char[] array = String.valueOf(num).toCharArray();
 
 
 
-        for (int i = 0; i <z.length ; i++) {
-            System.out.println(z[i]);
+        for (int i = 0; i <array.length ; i++) {
+            System.out.print(array[i]+" ");
         }
+
 
     }
 }
