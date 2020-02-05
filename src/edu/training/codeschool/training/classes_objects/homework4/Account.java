@@ -57,7 +57,7 @@ public class Account {
         } else if (amount < 0) {
             System.out.println("Enter positive amount");
             //խի  this.balance=0;
-            this.balance=0;
+
         }else {
             this.balance-=  amount;
             return this.balance;

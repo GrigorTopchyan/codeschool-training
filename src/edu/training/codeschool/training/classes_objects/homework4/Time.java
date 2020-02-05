@@ -96,29 +96,17 @@ public class Time {
         return time;
     }
 
+    private String format(int num) {
+        if ((num >= 0 && num < 10)) {
+            return "0" + num;
+        }
+        return "" + num;
+    }
+
     @Override
     public String toString() {
-        if ((getHour() >= 0 && getHour() < 10) && (getMinute() >= 0 && getMinute() < 10) && (getSecond() >= 0 && getSecond() < 10)) {
-            return "[" + "0" + getHour() + ":" + "0" + getMinute() + ":" + "0" + getSecond() + "]";
-
-        } else if (!(getHour() >= 0 && getHour() < 10) && (getMinute() >= 0 && getMinute() < 10) && (getSecond() >= 0 && getSecond() < 10)) {
-            return "[" + getHour() + ":" + "0" + getMinute() + ":" + "0" + getSecond() + "]";
-
-        } else if (!(getHour() >= 0 && getHour() < 10) && !(getMinute() >= 0 && getMinute() < 10) && (getSecond() >= 0 && getSecond() < 10)) {
-            return "[" + getHour() + ":" + getMinute() + ":" + "0" + getSecond() + "]";
-
-        } else if ((getHour() >= 0 && getHour() < 10) && (getMinute() >= 0 && getMinute() < 10) && !(getSecond() >= 0 && getSecond() < 10)) {
-            return "[" + "0" + getHour() + ":" + "0" + getMinute() + ":" + getSecond() + "]";
-
-        } else if (!(getHour() >= 0 && getHour() < 10) && (getMinute() >= 0 && getMinute() < 10) && !(getSecond() >= 0 && getSecond() < 10)) {
-            return "[" + getHour() + ":" + "0" + getMinute() + ":" + getSecond() + "]";
-        } else if ((getHour() >= 0 && getHour() < 10) && !(getMinute() >= 0 && getMinute() < 10) && (getSecond() >= 0 && getSecond() < 10)) {
-            return "[" +"0" + getHour() + ":" + getMinute() + ":" +"0" + getSecond() + "]";
-        }else if ((getHour() >= 0 && getHour() < 10) && !(getMinute() >= 0 && getMinute() < 10) && !(getSecond() >= 0 && getSecond() < 10)) {
-            return "[" +"0" + getHour() + ":" + getMinute() + ":" + getSecond() + "]";
-        } else {
-            return "[" + getHour() + ":" + getMinute() + ":" + getSecond() + "]";
-        }
-
+        return "[" + format(hour) + ":" + format(minute) + ":" + format(second) + "]";
     }
+
+
 }

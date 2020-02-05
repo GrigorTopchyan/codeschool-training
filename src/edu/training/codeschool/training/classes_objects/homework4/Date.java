@@ -18,8 +18,8 @@ public class Date {
     }
 
     public void setDay(int day) {
-        //ստեղ կամ պիտի լինի ոչ թե և
-        if (day > 31 && day < 1) {
+
+        if (day > 31 || day < 1) {
             System.out.println("Day can't be > than 31 or < than 1");
         } else {
 
@@ -33,8 +33,8 @@ public class Date {
     }
 
     public void setMonth(int month) {
-        //ստեղ կամ պիտի լինի ոչ թե և
-        if (month > 12 && month < 1) {
+
+        if (month > 12 || month < 1) {
             System.out.println("Month can't be > than 12 or < than 1");
         } else {
             this.month = month;
@@ -46,9 +46,8 @@ public class Date {
     }
 
     public void setYear(int year) {
-        //ստեղ կամ պիտի լինի ոչ թե և
-        //խի չի կարա 0 լինի
-        if (year < 1 && year == 0) {
+
+        if (year < 1 ) {
             System.out.println("Year can't be negative or 0");
         } else {
             this.year = year;
@@ -56,24 +55,24 @@ public class Date {
 
     }
 
-    public String plusYear(int year) {
+    public void plusYear(int year) {
 
-        int sumOfYears = year + getYear();
-        //չպիտի վերադարձնես
-        //պահանջը ասումա եղած օբյեկտի year ը ավելացնես
-        return "[ " + sumOfYears + " / " + getMonth() + " / " + getDay() + " ]";
+        int sumOfYears = this.year + year;
+
+        System.out.println(sumOfYears);;
     }
 
-    public String plusDays(int days) {
-        //նույնը սրա համար
-        //պիտի ստւգես եթե 30 ից ավել լինի պիտի ամիսները գւմարես
-        // նույնը ամիսների համար պիտի ստուգես
-        int sumDays = getDay() + days;
-        if (sumDays <= 0 || sumDays > 31) {
+    public void plusDays(int days) {
+
+        int sumDays = this.day + days;
+        if (sumDays <= 0 || sumDays > 30) {
             System.out.println("Day can't be > than 31 or < than 1");
-            return "[ " + 0 + "0" + " / " + 0 + "0" + " / " + 0 + "0" + " ]";
+
         }
-        return "[ " + getYear() + " / " + getMonth() + " / " + sumDays + " ]";
+        if (sumDays>30){
+          this.month++;
+        }
+        System.out.println("[ " + year + " / " + month + " / " + day + " ]");
 
     }
 

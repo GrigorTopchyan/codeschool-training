@@ -61,14 +61,15 @@ public class Employee {
 
     public double getAnnualSalary() {
 
-        return MONTH_OF_YEAR * getSalary();
+        return MONTH_OF_YEAR * salary;
     }
 
     public void raiseSalary(int percent) {
-        //պիտի տվյալ employee ի սալարին ավելացնես ոչ թե տպես
+
         double getPercent = getAnnualSalary()/100 * percent;
-        double salaryAfterRaise = getPercent + getAnnualSalary();
-        System.out.println("Annual salary after a raise on "+percent+ " = "+salaryAfterRaise );
+        salary = getPercent + getAnnualSalary();
+
+
 
 
     }
@@ -76,6 +77,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "[" + "id = " + getId() + ", Name = " + getFirstName() + ", Last name = " + getLastName() + ", salary = " + getSalary() + " ]";
+        return "[" + "id = " + id + ", Name = " + firstName + ", Last name = " + lastName + ", salary = " + salary + " ]";
     }
 }
