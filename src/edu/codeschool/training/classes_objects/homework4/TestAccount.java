@@ -8,6 +8,7 @@ public class TestAccount {
         System.out.println("balance: "+a2.getName()+" "+a2.credit(2000));
         a1.transferTo(a2,500);
 
+        //Պետք չի կանչել toString() System.out.println() ի մեջ ավտոմատ կանչումա;
         System.out.println(a1.toString());
         System.out.println(a2.toString());
 

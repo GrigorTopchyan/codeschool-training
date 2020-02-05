@@ -23,6 +23,7 @@ public class Time {
     }
 
     public void setHour(int hour) {
+        //Կամ օպերատորը պիտի լինի ոչ թէ և
         if (hour >= 0 && hour <= 23) {
             this.hour = hour;
         }
@@ -52,6 +53,7 @@ public class Time {
     }
 
     public Time nextSecond() {
+        //Ստեղ պիտի րոպեն ավելացնես եթե 59 ից ավելա
         int nextSecond = getSecond() + 1;
         if (nextSecond > 59) {
             nextSecond = 0;

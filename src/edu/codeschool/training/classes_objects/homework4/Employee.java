@@ -37,13 +37,17 @@ public class Employee {
     public void setSalary(){
         this.salary=salary;
     }
+
+
     public double getAnnualSalary(){
+    //Էս խի ես գրել պետք չի
         salary =salary;
 
         return salary*12;
     }
     public double raiseSalary(double byPercent)
     {
+        //Պետք չի
         salary = salary;
         return salary = salary + ((salary * byPercent) / 100);
     }
