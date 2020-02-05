@@ -33,8 +33,8 @@ public class ClosestNumber {
 
 
     public int closestNumber(int number) {
-        int closestNumber1 = number - 2;
-        int closestNumber2 = number - 3;
+        int closestNumber1 = 0;
+        int closestNumber2 = 0;
 
         for (int i = 1; i <= 10; i++) {
             closestNumber1 = number - i;
