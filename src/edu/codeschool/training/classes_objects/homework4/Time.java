@@ -23,7 +23,6 @@ public class Time {
     }
 
     public void setHour(int hour) {
-        //Կամ օպերատորը պիտի լինի ոչ թէ և
         if (hour >= 0 && hour <= 23) {
             this.hour = hour;
         }
@@ -37,52 +36,49 @@ public class Time {
         if (minute >= 0 && minute <= 59) {
             this.minute = minute;
         }
-
-
     }
 
     public int getSecond() {
         return second;
     }
-
     public void setSecond(int second) {
         if (second >= 0 && second <= 59) {
 
             this.second = second;
         }
     }
-
     public Time nextSecond() {
-        //Ստեղ պիտի րոպեն ավելացնես եթե 59 ից ավելա
-        int nextSecond = getSecond() + 1;
-        if (nextSecond > 59) {
-            nextSecond = 0;
+            int nextSecond=getSecond()+1;
+            if (nextSecond > 59) {
+                nextSecond = 0;
+                minute+=1;
+            }
+            Time time = new Time(this.hour, this.minute, nextSecond);
+            return time;
         }
-        Time time = new Time(this.hour, this.minute, nextSecond);
-        return time;
-    }
 
-    public Time previousSecond() {
-        int previousSecond = getSecond() - 1;
-        if (previousSecond < 1) {
-            previousSecond = 0;
+        public Time previousSecond () {
+            int previousSecond = getSecond() - 1;
+            if (previousSecond < 1) {
+                previousSecond = 0;
+            }
+            Time time = new Time(getHour(), getMinute(), previousSecond);
+            return time;
         }
-        Time time = new Time(getHour(), getMinute(), previousSecond);
-        return time;
-    }
 
-    public String toString() {
-       // fornatDigit(hour);
-        return "[" + fornatDigit(hour) + ": " + fornatDigit(minute) + ": " + fornatDigit(second) + "]";
-    }
+        public String toString () {
+            // fornatDigit(hour);
+            return "[" + fornatDigit(hour) + ": " + fornatDigit(minute) + ": " + fornatDigit(second) + "]";
+        }
 
-    private String fornatDigit(int digit) {
-        return digit < 10 ? "0" + digit : "" + digit;
+        private String fornatDigit ( int digit){
+            return digit < 10 ? "0" + digit : "" + digit;
        /* if (digit < 10) {
             return "0" + digit;
         } else {
             return "" + digit;
         }*/
+
     }
 }
 
