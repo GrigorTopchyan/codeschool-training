@@ -5,22 +5,26 @@ public class Date {
     private int month;
     private int year;
 
+    public void Data(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
 
-    //Constructor ներ Էլ սարքի ու իրանց մեջ վալիդացիաներ արա
+    //վալիդացիաներ արա
     //այսինքն day - ը պիտի լինի 0 - 31, նույնը մնացած դաշտերի համար
 
     public int getDay() {
         return day;
     }
 
-    public void setDay(int i) {
+    public void setDay(int day) {
         // || օպերատորը պիտի օգտագործեիր ոչ թե &&
         if (day > 31 && day < 1) {
             this.day = day;
         }
         //Ստեղ եթե վալիդ day չի տպի որ user ը իմանա
     }
-
     public int getMonth() {
         return month;
     }
@@ -31,7 +35,6 @@ public class Date {
             this.month = month;
         }
     }
-
     public int getYear() {
         return year;
     }
@@ -63,9 +66,9 @@ public class Date {
         return "[ " + getYear() + " / " + getMonth() + " / " + sumDays + " ]";
     }
 
-   // public String toString() {
-
-  //  }
+    public String toString() {
+        return "[" + day + "/" + month + "/" + year + "]";
+    }
 }
 
 
