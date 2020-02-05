@@ -23,7 +23,7 @@ public class Time {
     }
 
     public void setHour(int hour) {
-        if (hour >= 0 && hour <= 23) {
+        if (hour >= 0 || hour <= 23) {
             this.hour = hour;
         }
     }
@@ -33,7 +33,7 @@ public class Time {
     }
 
     public void setMinute(int minute) {
-        if (minute >= 0 && minute <= 59) {
+        if (minute >= 0 || minute <= 59) {
             this.minute = minute;
         }
     }
@@ -42,7 +42,7 @@ public class Time {
         return second;
     }
     public void setSecond(int second) {
-        if (second >= 0 && second <= 59) {
+        if (second >= 0 || second <= 59) {
 
             this.second = second;
         }
