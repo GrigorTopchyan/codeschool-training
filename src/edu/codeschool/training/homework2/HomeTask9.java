@@ -10,14 +10,13 @@ public class HomeTask9 {
     public static void main(String[] args) {
         int[] array = {25, 14, 56, 15, 39, 56, 77, 18, 29, 49};
         int[] anotherArray = new int[array.length];
-        System.out.println("Array original ");
-        //Երկու for պետք չի մի for ով պիտի գրես
+
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + ",");
-            for (int c = array[0]; c <= array.length; c++) {
-                anotherArray[c] = array[i];
-                System.out.println(anotherArray[c]);
-            }
+            anotherArray[i] = array[i];
         }
+        System.out.println("Array original is " + Arrays.toString(array));
+        System.out.println("Array copy is " + Arrays.toString(anotherArray));
+
     }
 }
+

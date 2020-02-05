@@ -7,8 +7,11 @@ public class Employee {
     private String lastName;
     private double salary;
 
-    public  Employee(int id,String firstName,String lastName,double salary){
+    public Employee(int id, String firstName, String lastName, double salary) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
     }
 
 
@@ -44,21 +47,23 @@ public class Employee {
         this.salary = salary;
     }
 
-    public double getAnnualSalary (){
+    public double getAnnualSalary() {
         double annualSalary = 0;
         annualSalary = (annualSalary + salary) * 12;
         return annualSalary;
     }
-    public double raiseSalary(int percent){
-        percent = percent/100;
+
+    public double raiseSalary(int percent) {
+        percent = percent / 100;
         double raiseSalary = salary + (salary * percent);
+        System.out.print("Raise salary = ");
         return raiseSalary;
     }
 
 
     public String toString() {
-        return "Employee{" + "id=" + id + ", firstName='" + firstName  + ", lastName='" + lastName
-                + ", salary=" + salary + '}';
+        return "Employee{" + "id = " + id + ", firstName = '" + firstName + ", lastName = '" + lastName
+                + ", salary = " + salary + " Annual salary = " + getAnnualSalary() + '}';
     }
 
 }

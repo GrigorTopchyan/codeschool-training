@@ -22,11 +22,6 @@ public class HomeTask17 {
 
         }
         System.out.println("The second largest element is " + array[1]);
-
-        //Էս for ը պետք չի
-        for (int k = 0; k < array.length; k++) {
-
-        }
         System.out.println("The second smallest element is " + array[7]);
 
 

@@ -22,14 +22,13 @@ public class HomeTask21 {
         }
         //k < array.length ոչ թե k < array.length - 1
         //sum = sum + arr[k];
-        for (int k = 1; k < array.length - 1; k++) {
-            sum = sum + k;
+        for (int k = 1; k < array.length; k++) {
+            sum = sum + array[k];
         }
 
         avValOfInt = sum / (array.length - 2);
         System.out.println("The average value of an array of integers is  " + avValOfInt);
 
-        //chem karum haskanam xi chi ashxatum,indz tvuma logikan jishta
 
 
     }

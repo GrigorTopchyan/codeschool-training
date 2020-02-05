@@ -12,6 +12,7 @@ public class HomeWork20 {
         int[] array = {1, 2, 3, 4, 5, 7, 8, 9};
         int sumNumber;
         //Ապրի Գոռը ։D
+        //Hazar angam :D
         sumNumber = (array.length + 1) * (array.length + 2) / 2;
         for (int i = 0; i < array.length; i++) {
             sumNumber = sumNumber - array[i];

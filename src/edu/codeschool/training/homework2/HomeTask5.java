@@ -11,7 +11,8 @@ public class HomeTask5 {
         Scanner sc = new Scanner(System.in);
         n = sc.nextDouble();
         //for ի մեջ double որպես counter մի օգտագործի
-        for (double i = 1; i <= n; i++) {
+        // ok
+        for (int i = 1; i <= n; i++) {
             sum = sum + a / i;
         }
         System.out.println("Sum =" + sum);
