@@ -12,8 +12,8 @@ public class HomeTask1 {
         int sumOfOddNumbers = 0;
         for (int i = 1; i <=countOfNumbers; i++) {
             if (i % 2 != 0) {
-               //Ստեղ պետք չի տպել պահանջի մեջ չկա))
-                System.out.println(i);
+
+
                 sumOfOddNumbers += i;
             }
 

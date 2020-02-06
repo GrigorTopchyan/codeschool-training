@@ -20,6 +20,7 @@ public class HomeTask7 {
             if (arrValue == array[i]) {
                 index = i;
                 System.out.println(arrValue + " index is: " + index);
+                break;
             }
         }
     }

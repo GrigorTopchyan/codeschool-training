@@ -20,7 +20,7 @@ public class HomeTask14 {
             if (firstNum % 2 != 0) {
 
                 System.out.println(" even number " + firstNum);
-                //else if պետք չի else ֊ ը հերիքա
+
             } else if (firstNum % 2 == 0) {
                 sumOdd += firstNum;
             }

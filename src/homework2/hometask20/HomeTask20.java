@@ -8,8 +8,8 @@ public class HomeTask20 {
      * ex. {1,2,3,4,6,7,8,9} 5 is missing
      */
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 6, 7, 8, 9};
-        int[] arr1 = new int[arr.length + 1];
+        int[] arr = {1, 2, 3, 4,5, 6, 7, 8, 9,10,12};
+
         int sum = 0;
         int sum1 = 0;
         int missingNumber;
@@ -17,11 +17,10 @@ public class HomeTask20 {
             sum += arr[i];
         }
 
-        //Պետք չի նոր արայ սարքես արժեքավորես 1, n նոր գումար հաշվես
-        //կարաս ողղակի sum1 += j;
-        for (int j = 0; j <= arr1.length - 1; j++) {
-            arr1[j] = j;
-            sum1 += arr1[j];
+
+        for (int j = 0; j <= 11; j++) {
+
+            sum1 += j;
         }
         missingNumber = sum1 - sum;
         System.out.println("missing number is: " + missingNumber);

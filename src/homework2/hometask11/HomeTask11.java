@@ -7,16 +7,18 @@ public class HomeTask11 {
      */
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6};
+        int[] array2 = new int[array.length];
 
-        //Ստեղ դու ուղղակի տպել ես պիտի արրայի մեջ փոխես,
-        //այսինքն արրայի էլեմենտները վերջում պիտի հակառակ լինենե
+
+        for (int i = 0; i < array.length / 2; i++) {
+            int x = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = x;
+        }
+
         for (int arr : array) {
             System.out.print(" " + arr + " ");
 
-        }
-        System.out.println();
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(" " + array[i] + " ");
         }
     }
 }

@@ -10,18 +10,18 @@ public class HomeTask3 {
      */
     public static void main(String[] args) {
 
-        //m ֊ի  n ֊ ի տիպերը թող int լինեն
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number 1:");
-        double n1 = scanner.nextDouble();
+        int n1 = scanner.nextInt();
         System.out.println("Enter number 2:");
-        double n2 = scanner.nextDouble();
+        int n2 = scanner.nextInt();
         System.out.println(raiseToThePower(n1, n2));
     }
 
-    public static double raiseToThePower(double m, double n) {
-        double pow = 1;
-        for (double i = 1; i <= n; i++) {
+    public static int raiseToThePower(int m, int n) {
+        int pow = 1;
+        for (int i = 1; i <= n; i++) {
             pow *= m;
         }
         return pow;
