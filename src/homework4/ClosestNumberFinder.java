@@ -17,14 +17,10 @@ public class ClosestNumberFinder {
 
     private static boolean isPrime(int num) {
 
-
         for (int i = 2; i < num / 2; i++) {
             if (num % 2 == 0) {
                 return false;
-
             }
-
-
 
         }
 

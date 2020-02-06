@@ -8,9 +8,7 @@ public class PalindromeGetter {
      */
     public static void main(String[] args) {
 
-
         System.out.println(PalindromeGetter.GetPalindrome(13331));
-
 
     }
 
