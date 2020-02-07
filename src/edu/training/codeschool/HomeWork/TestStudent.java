@@ -9,6 +9,8 @@ public class TestStudent {
         Student student2 = new Student("Hayk", 26, 1993);
         Student student3 = new Student("Hayk", 28, 1992);
 
-        System.out.println(Student.getCount());
+        System.out.println(student.toString());
+        System.out.println(student2.toString());
+        System.out.println(student3.toString());
     }
 }

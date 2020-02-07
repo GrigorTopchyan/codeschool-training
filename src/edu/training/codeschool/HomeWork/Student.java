@@ -41,7 +41,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return "my name" + this.name;
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", birthDate=" + birthDate +
+                '}';
     }
 
     public static int getCount() {
