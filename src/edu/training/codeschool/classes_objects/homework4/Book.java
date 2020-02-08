@@ -1,6 +1,7 @@
 package edu.training.codeschool.classes_objects.homework4;
 
 public class Book {
+    //դաշտերը private պիտի լինեն
     public String name;
     public double price;
     public Author author;

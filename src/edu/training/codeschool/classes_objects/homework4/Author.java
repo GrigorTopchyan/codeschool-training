@@ -3,6 +3,7 @@ package edu.training.codeschool.classes_objects.homework4;
 import java.util.Date;
 
 public class Author {
+    //պիտի private լինի
     public String name;
     private String email;
     private String gender;
