@@ -18,8 +18,8 @@ package edu.training.codeschool.oop;
  *                        Print two acconts.
  */
 public class Account {
-    private String id;
-    private String name;
+    String id;
+    String name;
     private double balance;
 
     public Account(String id, String name) {
@@ -35,6 +35,27 @@ public class Account {
 
     public Account() {
     }
+
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBalance(double balance) {
+        if (balance < 0){
+            System.out.println("Balance cannot be negative");
+        }else {
+            this.balance = balance;
+        }
+
+    }
+
+
+    static int feePercent = 1;
 
     public String getId() {
         return id;
@@ -62,6 +83,10 @@ public class Account {
         //....
         other.balance+= amount;
         return true;
+    }
+
+    public static void chargeFee(){
+        System.out.println("Charged fee by " + feePercent + "Percent");
     }
 
     @Override
