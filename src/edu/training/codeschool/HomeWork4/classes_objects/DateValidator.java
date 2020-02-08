@@ -1,13 +1,21 @@
-/**package edu.training.codeschool.HomeWork4.classes_objects;
+package edu.training.codeschool.HomeWork4.classes_objects;
 
 public class DateValidator {
 
-    public  void validateDate(Date date ) {
-        boolean y=true;
-     date.dateValidator();{
-         System.out.println("is valid");
-     }
-       return false;
+    public static boolean validateDate(Date date) {
+
+        if (date.getYear() < 0) {
+            return false;
+        }
+        if (date.getMonth() < 0 || date.getMonth() > 12) {
+            return false;
+        }
+        if (date.getDay() < 0 || date.getDay() > 31) {
+            return false;
+        }return true;
     }
-}**/
+
+
+}
+
 

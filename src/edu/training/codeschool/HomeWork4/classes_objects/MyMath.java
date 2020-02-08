@@ -76,17 +76,17 @@ public class MyMath {
         } return mull;
     }
     public static boolean isPrime(int number){
-        boolean b =true;
-        if(number<=1){ b=false;
+        boolean isprime =true;
+        if(number<=1){ isprime=false;
             System.out.println(number+" not Prime");
         }
         for (int i = 2; i <number/2 ; i++) {
-            if(number%i!=0){ b=false;
+            if(number%i==0){ isprime=false;
                 System.out.println(number+" not prime");
-            } else{ b=true;
+            } else{ isprime=true;
                 System.out.println(number+" is Prime");
             }break;
 
-        } return b;
+        } return isprime;
     }
     }

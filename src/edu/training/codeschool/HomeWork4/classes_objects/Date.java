@@ -11,17 +11,17 @@ public class Date {
         if (day > 0 && day < 31) {
             this.day = day;
         } else {
-            System.out.println("Error ");
+            System.out.println("wrong time");
         }
         if (month > 0 && month < 13) {
             this.month = month;
         } else {
-            System.out.println("Error ");
+            System.out.println("wrong month");
         }
         if (year > 0) {
             this.year = year;
         } else {
-            System.out.println("Error ");
+            System.out.println("wrong year");
         }
 
 
@@ -38,7 +38,7 @@ public class Date {
         if (day > 0 && day < 31) {
             this.day = day;
         } else {
-            System.out.println("Error ");}
+            System.out.println(" wrong ");}
 
     }
 
@@ -51,7 +51,7 @@ public class Date {
         if (month > 0 && month < 13) {
             this.month = month;
         } else {
-            System.out.println("Error ");
+            System.out.println(" wrong ");
         }
     }
 
@@ -63,7 +63,7 @@ public class Date {
         if (year > 0) {
             this.year = year;
         } else {
-            System.out.println("Error ");
+            System.out.println(" wrong ");
         }
     }
 
