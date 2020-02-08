@@ -12,9 +12,8 @@ public class ArrayMaker {
     public static void main(String[] args) {
 
         int num = 5678;
+        //Արսեն ջան գրի առանց toCharArray օգտագործելու անցած դասին ալգորիթմը նայեցինք
         char[] array = String.valueOf(num).toCharArray();
-
-
 
         for (int i = 0; i <array.length ; i++) {
             System.out.print(array[i]+" ");
