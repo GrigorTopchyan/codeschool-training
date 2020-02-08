@@ -5,7 +5,7 @@ public class HomeTask3 {
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 10);
-            System.out.println("array"+i+"="+array[i]);
+            System.out.println("array" + i + "=" + array[i]);
         }
 //   NVAZMAN KARGI HAMAR ;
         int x;
@@ -20,9 +20,10 @@ public class HomeTask3 {
 
             }
 
-        }System.out.println("nvazman kargov");
+        }
+        System.out.println("nvazman kargov");
         for (int j = 0; j < array.length; j++) {
-            System.out.print(array[j] );
+            System.out.print(array[j]);
         }
         //           ACHMAN KARGI HAMAAR
         for (int i = 0; i < array.length; i++) {
@@ -36,10 +37,10 @@ public class HomeTask3 {
             }
 
         }
-        System.out.println("\n"+"achman kargov");
+        System.out.println("\n" + "achman kargov");
         for (int j = 0; j < array.length; j++) {
 
-            System.out.print(+ array[j] );
+            System.out.print(+array[j]);
 
         }
     }

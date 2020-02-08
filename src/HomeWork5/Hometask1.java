@@ -1,7 +1,9 @@
 package HomeWork5;
 
+//կլասսների աննուները էլ Hometask մի դրեք
+//անունը պիտի գոյական լինի ու նկարագրի թե ինչի համարա
+//օրինակ կարար լիներ NextPrimeFinder
 public class Hometask1 {
-
 
     public static int findNextPrime(int num) {
         int j = 1;

@@ -7,6 +7,7 @@ public class HomeTask4 {
         Scanner scanner = new Scanner(System.in);
         int b = scanner.nextInt();
         int[] array = HomeTask2.numberToArray(b);
+        //անունները լավ դիր օրինակ կարար լիներ isPolindrome = true;
         boolean t = true;
         for (int i = 0; i < array.length/2; i++) {
             if (array[i] != array[array.length - 1 - i]) {
