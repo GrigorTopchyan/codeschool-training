@@ -1,22 +1,25 @@
 package edu.codeschool.training.homework3;
 
+import edu.codeschool.training.homework2.HomeTask17;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class HomeTask3 {
     public static void main(String[] args) {
-        int [] arr = {1,5,8,6};
-        int temp;
-        for (int i = 0; i <arr.length - 1  ; i++) {
-            if (arr[i] > arr[i + 1]) {
-                temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
-            }
-            if (arr[i] < arr[i +1]) {
-                temp = arr[i];
-                arr[i] = arr[i +1];
-                arr[i + 1] = temp;
-            }
-
-
+        Scanner sc = new Scanner(System.in);
+        int length = sc.nextInt();
+        int[] arr = new int[length];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] =(int)(Math.random() * 100);
         }
+        HomeTask17.sortArray(arr);
+        System.out.println(Arrays.toString(arr));
+
+
     }
+
+
 }
+
+
