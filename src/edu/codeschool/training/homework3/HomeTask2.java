@@ -5,6 +5,7 @@ import com.javalesson.controlstatement.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//անունները դզի
 public class HomeTask2 {
     public static void main(String[] args) {
         int n;
@@ -21,6 +22,8 @@ public class HomeTask2 {
         int [] arr = new int[Integer.toString(number).length()];
         while (number != 0) {
             t = number % 10;
+            //սենց մի արա մի հատ counter պահի հերթով գումարի
+            //օրինակ arr[counter++] = t;
             arr[Integer.toString(number).length() - 1] = t;
             number = (number - t)/10;
         }

@@ -13,10 +13,9 @@ public class HomeTask3 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] =(int)(Math.random() * 100);
         }
+        // լավն էր :D
         HomeTask17.sortArray(arr);
         System.out.println(Arrays.toString(arr));
-
-
     }
 
 

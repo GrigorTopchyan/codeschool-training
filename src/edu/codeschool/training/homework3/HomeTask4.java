@@ -8,7 +8,9 @@ public class HomeTask4 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int[] arr = HomeTask2.arrayFromNumber(a);
+        //անունները լավացրու օրինակ կարար լիներ isPolindrome = true;
         boolean t = true;
+        //սխալա աշխատում դզի օրինակ  23432 ասումա The number is not polyndrom
         for (int i = 0; i < arr.length / 2; i++) {
             if (arr[i] == arr[arr.length - 1 - i]) {
                 t = false;
