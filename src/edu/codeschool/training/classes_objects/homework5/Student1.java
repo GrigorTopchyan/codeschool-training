@@ -53,7 +53,7 @@ public class Student1 {
         this.birthDate = birthDate;
         numberOfObjects++;
 
-
+        //Էս խի ես գրել Հրաչ ջան
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
         calendar.set(2016, Calendar.JANUARY, 5, 12, 30, 0);
@@ -61,6 +61,10 @@ public class Student1 {
 
     }
 
+    //պետք չի տպի թող վերադարձնի օբյեկտների քանակը
+    //ով ուզի տպի իրան գեթ կանի կտպի
+    //էս մեթոդը ստատիկ սարքի ինքը օբյեկտի հետ կապ չունի
+    //ինքը կլասսի օբյեկտների քանակնա վերադարձնում այսինքն կլասսի մեթոդ պիտի լինի
     public void printNumberOObjects(){
         System.out.println( "There are " + numberOfObjects +" objects in this class");
     }

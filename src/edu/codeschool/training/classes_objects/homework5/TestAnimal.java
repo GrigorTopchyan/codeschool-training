@@ -18,9 +18,12 @@ public class TestAnimal {
 
         for (int i = 0; i <animals.length ; i++) {
 
+            //ստեղ պիտի greeting ը կանչեիր
             System.out.println(animals[i]);
         }
 
+
+        //Սրանից հետոն էլ պետք չի
         System.out.println();
 
 

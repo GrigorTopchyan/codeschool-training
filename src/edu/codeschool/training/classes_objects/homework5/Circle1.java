@@ -25,6 +25,7 @@ public class Circle1 extends Shape1 {
     }
 
     public Circle1(){
+       //Պետք չի կանչել ավտոմատ կանչվումա
         super();
         radius = 1.0;
     }

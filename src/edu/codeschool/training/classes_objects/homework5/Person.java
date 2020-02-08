@@ -11,8 +11,11 @@ package edu.codeschool.training.classes_objects.homework5;
 
 public abstract class Person {
 
+    //պիտի private լինեն encapsulation խախտել ես
     public String name;
     public String address;
+
+    //դեֆոլթ արժեքները պիտի non static initialization block ում լինի
 
 
     public Person(String name, String address) {

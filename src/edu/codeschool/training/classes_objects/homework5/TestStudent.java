@@ -16,8 +16,8 @@ public class TestStudent {
         Student1 student2 = new Student1("John",22,Calendar.getInstance());
         Student1 student3 = new Student1("Nik",29,Calendar.getInstance());
 
-
-
+        //պետք չի երեք հատ տպել
+        //այ որ ստատիկ լիներ ։դ
        student1.printNumberOObjects();
        student2.printNumberOObjects();
        student3.printNumberOObjects();

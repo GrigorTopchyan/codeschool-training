@@ -21,6 +21,7 @@ public class Rectangle1 extends Shape1 {
 
     public Rectangle1()
     {
+        //Պետք չի կանչել
         super();
         width = 1.0;
         length = 1.0;
