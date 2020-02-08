@@ -52,6 +52,6 @@ public class Time {
     public String toString() {
         return "hh:" + hour +
                 " mm: " + minute +
-                "ss " + second;
+                " ss: " + second;
     }
 }
