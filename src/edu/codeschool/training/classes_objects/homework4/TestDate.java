@@ -2,7 +2,7 @@ package edu.codeschool.training.classes_objects.homework4;
 
 public class TestDate {
     public static void main(String[] args) {
-        Date date = new Date();
+        Date date = new Date(1,12,1992);
         date.setDay(1);
         date.setMonth(12);
         date.setYear(1992);

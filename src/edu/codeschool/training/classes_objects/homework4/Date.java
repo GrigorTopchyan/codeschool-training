@@ -5,6 +5,10 @@ public class Date {
     private int month;
     private int year;
 
+    public Date(int day, int month, int year) {
+
+    }
+
     public void Data(int day, int month, int year) {
         this.day = day;
         this.month = month;
@@ -19,51 +23,46 @@ public class Date {
     }
 
     public void setDay(int day) {
-        // || օպերատորը պիտի օգտագործեիր ոչ թե &&
-        if (day > 31 && day < 1) {
+       // if (day > 31 || day < 1) {
             this.day = day;
         }
         //Ստեղ եթե վալիդ day չի տպի որ user ը իմանա
-    }
+   // }
     public int getMonth() {
         return month;
     }
 
-    public void setMonth(int i) {
+    public void setMonth(int month) {
         // || օպերատորը պիտի օգտագործեիր ոչ թե &&
-        if (month > 12 && month < 1) {
+       // if (month > 12 || month < 1) {
             this.month = month;
         }
-    }
+   // }
     public int getYear() {
         return year;
     }
 
-    public void setYear(int i) {
-        // || օպերատորը պիտի օգտագործեիր ոչ թե &&
-        //year < 1 && year == 0
-        if (year < 1 && year == 0) {
-            //փոխանցել ես  i  փոփոխական բայց գրել ես this.year = year;
+    public void setYear(int year) {
+      //  if (year < 1 || year == 0) {
             this.year = year;
         }
-    }
+   // }
 
     //Էս մեթոդը պիտի տվյալ օբյեկտի year դաշտը ավելացնեի տրված քանակով ոչ թե վերադարձնի
     public String plusYear(int year) {
-        int sumOfYears = year + getYear();
-        return "[ " + sumOfYears + " / " + getMonth() + " / " + getDay() + " ]";
+        int sumYear = getYear() + year;
+        return "[" + getDay() + "/" + getMonth() + "/" + sumYear + "]";
     }
+
 
     //Էս մեթոդը պիտի տվյալ օբյեկտի year դաշտը ավելացնեի տրված քանակով ոչ թե վերադարձնի
     //պետք չի ինչ որ բան տպի
     public String plusDay(int day) {
-        int sumDays = getDay() + day;
-        if (sumDays <= 0 || sumDays > 31) {
-            //ստեղ պիտի ամիսը ավելացնի ոչ
-            System.out.println("Day can't be > than 31 or < than 1");
-            return "[ " + 0 + "0" + " / " + 0 + "0" + " / " + 0 + "0" + " ]";
+        int sumDay = getDay() + day;
+        if (sumDay <= 0 || sumDay > 31) {
+
         }
-        return "[ " + getYear() + " / " + getMonth() + " / " + sumDays + " ]";
+        return "[" + sumDay + "/" + getMonth() + "/" + getYear() + "]";
     }
 
     public String toString() {
