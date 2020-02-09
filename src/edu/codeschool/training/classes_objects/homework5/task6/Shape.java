@@ -6,16 +6,20 @@
  */
 
 
-package edu.codeschool.training.classes_objects.homework5;
+package edu.codeschool.training.classes_objects.homework5.task6;
 
-public abstract class Shape2 {
+public abstract class Shape {
 
-    String shapeName;
+    public Shape(String name) {
+        this.name = name;
+    }
 
-    public abstract void area();
+    String name;
+
+    public abstract double area();
 
     public String toString(){
-        return shapeName;
+        return name;
     }
 
 

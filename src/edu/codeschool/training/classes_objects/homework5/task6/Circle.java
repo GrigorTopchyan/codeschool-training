@@ -6,31 +6,23 @@
  */
 
 
-package edu.codeschool.training.classes_objects.homework5;
+package edu.codeschool.training.classes_objects.homework5.task6;
 
-public class Circle2 extends Shape2 {
+public class Circle extends Shape {
 
 
     private double radius;
 
     @Override
-    public void area() {
-        double area = Math.PI * (radius * radius);
-        System.out.println("The area of circle is: " + area);
+    public double area() {
+        return Math.PI * (radius * radius);
     }
 
 
-    public Circle2(double radius) {
+    public Circle(double radius,String name) {
+        super(name);
         this.radius = radius;
     }
-
-    public Circle2() {
-        super();
-   }
-
-
-
-
 
 }
 
