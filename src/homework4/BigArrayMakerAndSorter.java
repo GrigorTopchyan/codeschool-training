@@ -13,14 +13,15 @@ public class BigArrayMakerAndSorter {
     //պիտի մեթոդ գրեիր, որը ստանումա երկու սորտավոռված արրայ որպես պարամետեր
     //և վերադարձնումա դրանց միավորված արայը
     public static void main(String[] args) {
-        int[] ints = {3, 1, 2, 4, 5};
+        int[] ints = {3, 1, 2, 4, 5,12,13};
         int[] ints2 = {7, 6, 9, 11, 8, 10};
         int[] bigArr = new int[ints.length + ints2.length];
-        for (int i = 0; i < bigArr.length / 2; i++) {
+        for (int i = 0; i < bigArr.length/2 ; i++) {
             //ստեղ բախտտ բերելա որ երկու արայների length երը հավասար են
             //եթե հավասար չլինեն չի աշխատի
-            bigArr[i + i] = ints2[i];
-            bigArr[i + i + 1] = ints[i];
+            bigArr[i + i] = ints[i];
+            bigArr[i + i + 1] = ints2[i];
+
 
         }
         boolean isSorted = true;
