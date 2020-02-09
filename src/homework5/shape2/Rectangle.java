@@ -20,9 +20,9 @@ public class Rectangle extends Shape2 {
 
 
    @Override
-    public void area() {
-        double area = length * width;
-       System.out.println(area);
+    public double area() {
+        return length * width;
+
     }
 
 

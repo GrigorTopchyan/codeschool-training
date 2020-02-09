@@ -23,8 +23,8 @@ public class Cylinder extends Shape2 {
 
 
     @Override
-    public void area() {
-      double  area =PI * height * radius*radius;
-        System.out.println(area);
+    public double area() {
+      return PI * height * radius*radius;
+
     }
 }

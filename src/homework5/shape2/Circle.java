@@ -19,9 +19,9 @@ public class Circle extends Shape2 {
 
 
     @Override
-    public void area() {
-        double area = PI * radius * radius;
-        System.out.println(area);
+    public double area() {
+return   PI * (radius * radius);
+
     }
 
 

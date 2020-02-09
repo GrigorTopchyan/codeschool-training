@@ -14,7 +14,15 @@ public abstract class Shape2 {
         this.shapeName = shapeName;
     }
 
-    public abstract void area();
+    public String getShapeName() {
+        return shapeName;
+    }
+
+    public void setShapeName(String shapeName) {
+        this.shapeName = shapeName;
+    }
+
+    public abstract double area();
 
 
     @Override
