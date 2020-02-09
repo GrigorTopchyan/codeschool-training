@@ -1,5 +1,6 @@
 package homework5;
 
+//կլասի անունը պիտի մեծատառ լինի
 public class nearPrimeFinder {
 
     public static int find(int inputNumber) {

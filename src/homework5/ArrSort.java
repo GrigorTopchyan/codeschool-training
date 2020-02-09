@@ -2,6 +2,8 @@ package homework5;
 
 public class ArrSort {
 
+    //պիտի մեթոդ գրես որ ստանա երկու սորտավորված արրայ և վերադարձնի դրանց միավորված արայը
+    //փոխի
     public static void main(String args[]) {
         int array[] = {1, 2, 4, 5, 6};
         int array1[] = {2, 3, 5, 7};
