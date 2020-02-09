@@ -11,27 +11,23 @@ public class PalindromeGetter {
     //լավ կլինի main մեթոդը առանձնացնես առանձին կլասսի մեջ գրես օրինակ PolindromTest
     public static void main(String[] args) {
 
-        System.out.println(PalindromeGetter.GetPalindrome(13331));
+        System.out.println(PalindromeGetter.getPalindrome(13331));
 
     }
 
-    //մեթոդի անունը փոքրատառով պիտի սկսվի
-    static boolean GetPalindrome(int num) {
+
+    static boolean getPalindrome(int num) {
         int next = 0;
         int pal2 = num;
 
         while (pal2 != 0) {
             next = (next * 10) + (pal2 % 10);
             pal2 /= 10;
-            //պետք չի ամեն անգամ տպես
-            System.out.println(next);
+
         }
 
-        //կարաս մի տողով գրես return num == next;
-        if (num == next) {
-            return true;
-        } else {
-            return false;
-        }
+
+        return num == next;
+
     }
 }
