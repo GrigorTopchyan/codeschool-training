@@ -1,0 +1,75 @@
+  Reading:
+            1. Herbert Schildt - https://drive.google.com/open?id=1EwG6p0-1plwl68ydychP_TwrhXo6eKh
+               Часть 1. Язык Java Глава
+
+                    1. Глава 8. Наследование 209 - 235
+                    2. Глава 9. Пакеты и интерфейсы 235 - 263
+
+            2. CayS. Horstmann - https://drive.google.com/open?id=1jBC-OY-dvRcSeaK9Tttc7kvF12-zuK_j
+                1. Глава 5. Наследование 197 - 271
+                2. Глава 6. Интерфейсы и внутренние классы 271 - 313
+
+
+            3. Slide - https://drive.google.com/open?id=1OrlS6YBE7X4Jwj9ddLSTinG1poYYp8yX
+    Writing:
+
+           1.  Create class with name ArraysUtil. The class has the following static methods:
+               Create static method concatenateTwoArrays which receives as parameter two arrays of type int
+               and returns concatenation of the arrays.
+               Create static method findIndex that receives as parameter array of type int and element of type int
+               and returns the index of the element if array contains the element else return -1
+               Create static method reverseArr which receives as parameter array of type int and returns the reversed array of that array.
+               Create static method toString() which receives as a parameter array of type int and
+               returns string representation of the array in this format [el1,el2,... ,eln]
+               Create static method sort which receives as a parameter array of int and sorts the element in ascending order
+               Create static method findSecond which receives as a parameter array of int and returns the second largest element of the array
+               Create static method doubleArray which receives array of type int and returns another array doubling(երկու անգամ մեծացնել) the elements of the given array
+               Create static method contains which receives array of int and element of type int and checks whether the array contains the element or not.
+               Create ArrayUtilsTest class and test if all methods of ArraysUtil work correctly
+            2. Create interface Monster which has following method
+               which has String attack() method
+               Create class AbstractMonster which implements Monster interface and has the name field of type String
+               Create Subclasses FireMonster, WaterMonster and StoneMonster and provide actual implementation o the attack method.
+               Create Class MonsterChempionship and check if your methods work correctly.
+            3.0 Գրել կլաս Point, որը կնկարագրի մաթեմատիկական կետը(այսինքն կետի կորդինատները x,y)
+                Կլասսը պիտի ունենա հետևյալ վարքը(bihaviour):
+                    -Երկու կետերի միջև հեռավորությունը
+                    -Երկու կետերի միջնակետը
+            3.1 Գրել կլաս Line, որը կնկարագրի մաթեմատիկական ուղղիղը(այսինքն ուղղի սկզբնակետը և վերջնակետը)
+                Կլասսը պիտի ունենա հետևյալ վարքը(bihaviour)
+                    -վերադարձնի ուղղի երկարությունը
+                    -ստուգի արդյոք տվյալ կետը ուղղի վրա է թէ ոչ
+
+
+           3. Create interface with name Vehicle. Vehicle should have following contract:
+              stop, start, move(double distance)
+              Create abstract class with name Transport, Transport should implement Vehicle interface and has
+              color of type String, maxSpeed of type double
+              Create following subclasses of Transport - Car , Train, Boat, Plane
+              Think and add fields and methods for this classes
+              Create following subclasses of Car - Truck, Bus
+              Think and add fields and methods for this classes
+              Create following subclasses of Train - InnerCity and Tram
+              Think and add fields and methods for this classes
+              Create class TransportMangement. In main method check if all methods working correctly.
+           4.
+            4.1. Create a Student class that implements the Person interface.
+                 As well as storing the students name and email, also store their course grade (e.g A, B, C) in a member variable.
+                 The grade should be accessible via a getGrade method.
+                 For the implementation of getDescription return a message
+                 along the lines of “A C grade student”, substituting the students actual grade.
+            4.2. Create a Lecturer class that implements the Person interface.
+                 This class should also store the subject that the lecturer teaches.
+                 Add a getSubject method, and implement getDescription so that it returns a suitable message, e.g. “Teaches Biology”.
+            4.3. Create a third class, Employee that implements the Person interface.
+                 This should also store the name of the department the Employee works in (available via getDepartment). Again, getDescription should return a suitable message.
+            4.4. Create a class called PersonViewerTest. Implement a main method that
+                  a. Creates a PersonViewer object using the provided classes.
+                  b. Creates instances of the Lecturer, Employee and Student classes and invokes the view method of the PersonViewer on each of them.
+                  c. Can you identify what is happening?
+            4.5. Create a subclass of the PersonViewer object that has the following modifications:
+                  a. Overrides the view method, and uses the instanceof test to determine the actual type of the object (e.g. Employee), and then casts it appropriately.
+                  b. Create three methods called viewPerson, that vary by their input parameters. I.e. create one that accepts an Employee another that accepts a Lecturer and a third method that accepts a Student.
+                  c. Implement these methods so they write out to the console all information available about the objects. E.g. for an Employee write out its name, email and department.
+                  d. Finally add a main method to EnhancedPersonViewer that creates instances of each different type of person, and then invokes the view method on each.
+
