@@ -10,7 +10,6 @@ JDK, JRE, JVM
 First Java Application
 Git
 
-
 ----------------------------------------
 Comments in java
 How Information is kept in memory
@@ -114,6 +113,48 @@ Access modifiers
 Constructor Overloading
 Method Overloading
 Constants (final)
+
+this
+static
+
+OOP Principles
+Encapsulation
+Abstraction
+Abstract class
+Inheritance
+this()
+super()
+
+Polymorphism
+    Virtual Methods
+    Overriding methods
+        same name
+        same argument list
+        almost the same return type
+        overriden methods cannot be less accessible
+    Final methods
+    Final classes
+    Overloading methods
+    instanceof
+    Interfaces
+    Abstract class vs interface
+    Object class
+    equals method
+    Wrapper classes
+    Boxing and unboxing
+
+
+    Memory Structure
+    object cloning
+        Shallow cloning
+        Deep cloning
+    Immutable objects
+    String pool
+
+    Inner classes
+    Enum
+
+
 
 
 
