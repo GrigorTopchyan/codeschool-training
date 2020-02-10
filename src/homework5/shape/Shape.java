@@ -1,6 +1,6 @@
 package homework5.shape;
 
-public class Shape {
+public abstract class Shape {
     /**
      * 4.1 Create class Shape which contains:
      * Two instance variables color (String) and filled (boolean).
@@ -39,9 +39,13 @@ public class Shape {
         this.filled = filled;
     }
 
+
+
+
+
     @Override
     public String toString() {
         String isFilled = this.filled == true ? " Filled " : "not Filled ";
-        return "A Shape with color of " + color + " and filled " + isFilled;
+        return " A Shape with color of " + color + " and filled " + isFilled;
     }
 }

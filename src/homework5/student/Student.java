@@ -1,31 +1,32 @@
 package homework5.student;
 
+import javafx.scene.input.DataFormat;
+
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Student {
     /**
-     *  1.1 Create class with name Student. Student should have following state and behaviour:
-     *                          Three private fields name of type String, age of type int birthDate of type java.util.Date
-     *                          One constructor with all fields
-     *                          getter and setter methods for all fields
-     *                          Override toString method
-     *                          Think and implement a way how to calculate haw many objects of type Student were created(should be used static field).
+     * 1.1 Create class with name Student. Student should have following state and behaviour:
+     * Three private fields name of type String, age of type int birthDate of type java.util.Date
+     * One constructor with all fields
+     * getter and setter methods for all fields
+     * Override toString method
+     * Think and implement a way how to calculate haw many objects of type Student were created(should be used static field).
      */
     private String name;
-    private int age;
-    private GregorianCalendar birthDate ;
-static {
-    int count= 1;
 
-    System.out.println(count++);
-}
+    private LocalDate birthDate;
 
-    public Student(String name, int age, GregorianCalendar birthDate) {
+    private static int count = 0;
+
+    public Student(String name, LocalDate birthDate) {
         this.name = name;
-        this.age = age;
+
         this.birthDate = birthDate;
+        count++;
     }
 
     public String getName() {
@@ -36,28 +37,22 @@ static {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public GregorianCalendar getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(GregorianCalendar birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public static int countOfObject() {
+        System.out.print("Count of object ");
+        return count;
     }
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", birthDate=" + birthDate +
-                '}';
+        return "[ " + "Name: " + name  + ", BirthDate: " + birthDate + " ]";
     }
 }
