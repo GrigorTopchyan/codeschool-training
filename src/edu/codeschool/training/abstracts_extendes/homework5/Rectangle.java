@@ -27,6 +27,7 @@ public class Rectangle extends Shape {
         return area;
     }
     public double getPerimeter(){
+        //karas miangamic veradrcnes
         double perimeter = 2 *(width * length);
         return perimeter;
     }

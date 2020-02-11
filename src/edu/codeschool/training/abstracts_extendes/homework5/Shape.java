@@ -30,6 +30,8 @@ public class Shape {
 
     @Override
     public String toString() {
+        //pahanjvuma vor ete true a apa tpi Filled ete false a apa Not Filled
+        //voch te  filled/Note filled " + filled +
         return "Shape{" +
                 "A shape with color of '" + color + '\'' +
                 ", filled/Note filled " + filled +

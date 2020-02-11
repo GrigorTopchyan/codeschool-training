@@ -3,6 +3,8 @@ package edu.codeschool.training.abstracts_extendes.homework5;
 public class Circle extends Shape {
     double radius = 1.0;
 
+    //xia default constructor
+    //parametrov haytarari
     public Circle() {
 
     }

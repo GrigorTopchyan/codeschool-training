@@ -3,6 +3,7 @@ package edu.codeschool.training.abstracts_extendes.homework5;
 import edu.codeschool.training.abstracts_extendes.homework5.Person;
 
 public class StudentPerson extends Person {
+    //dashtery private haytarari
     String university;
     double fee;
 

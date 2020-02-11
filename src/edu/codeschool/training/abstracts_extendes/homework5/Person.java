@@ -1,6 +1,7 @@
 package edu.codeschool.training.abstracts_extendes.homework5;
 
 public abstract class Person {
+    //dashtery haytarari private
     String name = "John";
     String address = "Armenia,Yerevan";
 

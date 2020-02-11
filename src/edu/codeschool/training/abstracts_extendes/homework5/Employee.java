@@ -1,6 +1,8 @@
 package edu.codeschool.training.abstracts_extendes.homework5;
 
 public class Employee extends Person {
+    //dashtery haytarary private
+    //encapsulacian chespahel
     String office;
     double salary;
 
