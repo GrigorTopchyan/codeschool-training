@@ -1,5 +1,6 @@
 package homework5.shape2;
 
+//Anuny Shape gri annuneri mej tver mi ogtagorci
 public abstract class Shape2 {
     /**
      * 6.1 Write an abstract class Shape with the following properties:

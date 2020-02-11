@@ -47,6 +47,7 @@ public class Student {
     }
 
     public static int countOfObject() {
+        //petq chi tpel methody menak arjeqy veradarcnelu hamara patasxanatu
         System.out.print("Count of object ");
         return count;
     }

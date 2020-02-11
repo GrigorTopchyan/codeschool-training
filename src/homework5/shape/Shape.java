@@ -45,6 +45,8 @@ public abstract class Shape {
 
     @Override
     public String toString() {
+        //petq chi grel  this.filled == true es boolean a karas miangamic gres
+        //this.filled
         String isFilled = this.filled == true ? " Filled " : "not Filled ";
         return " A Shape with color of " + color + " and filled " + isFilled;
     }

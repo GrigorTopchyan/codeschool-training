@@ -46,6 +46,7 @@ public class Rectangle extends Shape {
     }
 
     public double getArea() {
+        //karas miangamic return anes
         double area = length * width;
         return area;
     }
