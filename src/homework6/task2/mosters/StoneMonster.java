@@ -1,4 +1,4 @@
-package homework6.mosters;
+package homework6.task2.mosters;
 
 public class StoneMonster extends AbstractMonster {
     public StoneMonster(String name) {

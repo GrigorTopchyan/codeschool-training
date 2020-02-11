@@ -1,4 +1,4 @@
-package homework6.arraysutil;
+package homework6.task1.arraysutil;
 
 import java.util.Arrays;
 

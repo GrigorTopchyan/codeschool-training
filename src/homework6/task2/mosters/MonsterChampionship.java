@@ -1,4 +1,4 @@
-package homework6.mosters;
+package homework6.task2.mosters;
 
 public class MonsterChampionship {
     public static void main(String[] args) {

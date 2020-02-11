@@ -51,7 +51,7 @@
               Think and add fields and methods for this classes
               Create following subclasses of Train - InnerCity and Tram
               Think and add fields and methods for this classes
-              Create class TransportMangement. In main method check if all methods working correctly.
+              Create class TransportManagement. In main method check if all methods working correctly.
            4.
             4.1. Create a Student class that implements the Person interface.
                  As well as storing the students name and email, also store their course grade (e.g A, B, C) in a member variable.

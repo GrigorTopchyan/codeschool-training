@@ -1,4 +1,4 @@
-package homework6.mosters;
+package homework6.task2.mosters;
 
 /**
  * class AbstractMonster which implements Monster interface and has the name field of type String

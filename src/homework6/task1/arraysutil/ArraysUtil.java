@@ -1,6 +1,4 @@
-package homework6.arraysutil;
-
-import java.util.Arrays;
+package homework6.task1.arraysutil;
 
 public class ArraysUtil {
     /**
