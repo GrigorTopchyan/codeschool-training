@@ -27,6 +27,7 @@ public class Rectangle extends Shape {
     }
 
     public double getArea() {
+        //karas miangamic veradarcnes
         double a = this.length * this.width;
         return a;
     }

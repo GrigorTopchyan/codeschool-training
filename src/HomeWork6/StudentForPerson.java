@@ -1,6 +1,8 @@
 package HomeWork6;
 
+//classi anuny Student piti lini
 public class StudentForPerson extends Person {
+    //dashtery private piti lini
     public String university;
     public double fee;
 

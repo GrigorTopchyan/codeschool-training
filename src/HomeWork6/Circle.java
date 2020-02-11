@@ -17,6 +17,7 @@ public class Circle extends Shape {
 
 
     public double getArea(){
+        //karas miangamic veradrcnes
         double a=this.radius*this.radius*Math.PI;
         return a;
     }

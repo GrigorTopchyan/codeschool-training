@@ -1,3 +1,4 @@
+// package i name sxal es grel piti  HomeWork6.HomeTask6;
 package HomeTask6;
 
 public abstract class Shape {

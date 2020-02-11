@@ -5,8 +5,10 @@ public class Painter {
         System.out.println("[Painted shape with name:"+shapes.shapeName+"Color:"+color+"area = " + shapes.area());
 
         }
+        //piti anuny paint liner
         public static void paintArr(HomeTask6.Shape [] shapes,String color){
             for (int i = 0; i <shapes.length ; i++) {
+                //kanchi verevi paint methody
                 System.out.println(shapes[i]+" color is "+color);
             }
 

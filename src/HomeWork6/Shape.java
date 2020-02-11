@@ -1,6 +1,8 @@
 package HomeWork6;
 
 public class Shape {
+    //dashtery private sarqi
+    //encasulation ches pahel
     String color;
     boolean filled;
 

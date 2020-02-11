@@ -1,6 +1,8 @@
 package HomeWork6;
 
 public class Employee extends Person {
+    //dashtery private sarqi
+    //encapsulacian ches pahel
     public String office;
     public double salary;
 

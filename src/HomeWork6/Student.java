@@ -12,6 +12,7 @@ import java.util.Date;
  public class Student {
      private String name;
      private int age;
+     //arden import es arel karas miangamic Date gres
      private java.util.Date birthDate;
 
     public Student(String name, int age, Date birthDate) {
@@ -27,7 +28,13 @@ import java.util.Date;
                 ", age=" + age +
                 ", birthDate=" + birthDate +
                 '}';
-    }public static int calculateStudent=0;{
+    }
+
+    //dashty verevy haytarari
+    //private haytarari
+    //method gri tox veradarcni orinak getCreatedObjectsCount()
+    //anuny lav dir orinak countOfCreatedObjects
+    public static int calculateStudent=0;{
             calculateStudent++;
         }
 

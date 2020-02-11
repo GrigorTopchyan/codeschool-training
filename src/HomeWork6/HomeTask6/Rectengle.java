@@ -12,6 +12,7 @@ public class Rectengle extends HomeTask6.Shape {
 
     @Override
     public double area() {
+        //karas miangamic veradarcnes
         double area=width*height;
         return area;
     }

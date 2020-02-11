@@ -12,7 +12,7 @@ public class Cylinder extends HomeTask6.Shape {
 
     @Override
     public double area() {
-        double area=Math.PI*this.height*this.radius*radius;
-        return area;
+        //karas miangamic veradarcnes
+        return Math.PI* this.height* this.radius*radius;
     }
 }
