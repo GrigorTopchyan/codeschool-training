@@ -5,6 +5,8 @@ public class Account {
     private String name;
     private double balance;
 
+    //constructoer sarqi
+
     public int getId() {
         return id;
     }
@@ -17,10 +19,12 @@ public class Account {
         return balance;
 }
 
+    //credit methody piti stana parameter te inchqan ptit avelacni voch te fixsac 200
     public double credit() {
         return balance=balance + 200;
     }
 
+    //nuyn el stex
     public double debit() {
         return balance=balance - 100;
     }
@@ -37,6 +41,10 @@ public class Account {
         this.balance = balance;
     }
 
+    //mihat transfer method piti liner
+    //transfer methody piti ynduni vorpes parameter mihat urish account u qnaaky te inchqan piti transfer ani
+    //u et account balancy piti mecacno this i balancy poqracni
+    //piti validacianer anes ardjoq kara transfer ani etqan gumar aysinqn etqan pox uni te che
     public double transfer1() {
         return balance=balance-500;
     }

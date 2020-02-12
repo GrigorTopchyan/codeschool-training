@@ -57,6 +57,8 @@ public class Employee {
         return salary += ((salary * 10) / 100);
     }
 
+    //toString i mej petq chi tpel inch vor ban
+    //piti veradarcni objecti string nerkayacumy, du null es veradrcrel
     public String toString() {
         System.out.println("id=" + getId());
         System.out.println("FirstName " + getFirstName());
@@ -66,6 +68,7 @@ public class Employee {
         return null;
     }
 
+    //xi es erku hat toString sarqel
     public String toString1() {
         System.out.println("id=" + getId());
         System.out.println("FirstName " + getFirstName());

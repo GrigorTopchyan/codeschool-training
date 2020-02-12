@@ -2,11 +2,15 @@ package edu.training.codeschool.HomeWork4.Constructors;
 
 public class TestRectangle {
     public static void main(String[] args) {
+        //Nuyn el stex
         Rectangle rectangle = new Rectangle ();
         System.out.println("rectangle created");
         rectangle.setLength(5);
         rectangle.setWidth(2);
 
+      //hertov dashtery mi tpi
+        //toString kanchi sax miangamic tpi
+        //pahanjnery ushadir karda
         System.out.println("length="+rectangle.getLength());
         System.out.println("width="+rectangle.getWidth());
         System.out.println("perimeter="+rectangle.calculatePerimeter());

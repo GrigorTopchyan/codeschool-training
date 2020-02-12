@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class TestEmployee {
 
-
-
     public static void main(String[] args) {
+        //nuyn el stex
         Employee employee = new Employee();
         System.out.println("employee created");
         employee.setId(135);

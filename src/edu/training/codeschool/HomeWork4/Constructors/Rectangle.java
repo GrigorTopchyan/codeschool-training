@@ -4,6 +4,7 @@ public class Rectangle {
     private double length;
     private float width;
 
+    //validacianer ara vor bacasakan tiv chkarenan poxancen
     public Rectangle(double length) {
         this.length = length;
     }

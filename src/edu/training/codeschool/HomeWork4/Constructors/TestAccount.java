@@ -3,6 +3,7 @@ package edu.training.codeschool.HomeWork4.Constructors;
 public class TestAccount {
     public static void main(String[] args) {
         Account account = new Account();
+        //constructorov poxanci arjeqnery el setter mi kanchi
         System.out.println("account created");
         account.setId(243);
         account.setName("James");

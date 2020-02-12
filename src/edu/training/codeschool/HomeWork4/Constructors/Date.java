@@ -5,6 +5,9 @@ public class Date {
     private int month;
     private int year;
 
+
+    //constructor ches sarqel sarqi
+    //validacianer kanes vor mi5akajqic durs chga month[0 - 12), day [0,31]
     public int getDay() {
         return day;
     }
@@ -17,6 +20,7 @@ public class Date {
         return month;
     }
 
+    //seter methodneri mej validacianer areq
     public void setMonth(int month) {
         this.month = month;
     }

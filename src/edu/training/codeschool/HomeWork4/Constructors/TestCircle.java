@@ -3,6 +3,7 @@ package edu.training.codeschool.HomeWork4.Constructors;
 public class TestCircle {
 
     public static void main(String[] args) {
+        //Constructor ov poxanci arjeqnery
         Circle circle = new Circle ();
         System.out.println("circle created");
         circle.setRadius(1);
