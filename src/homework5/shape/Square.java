@@ -15,6 +15,7 @@ public class Square extends Rectangle {
      */
 
     public Square(double width, double length) {
+        //super i constructory kanchi set wv mi ara
         this.setWidth(width);
         this.setLength(width);
     }

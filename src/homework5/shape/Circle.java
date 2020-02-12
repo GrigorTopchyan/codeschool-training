@@ -36,8 +36,8 @@ public class Circle extends Shape {
     }
 
     public double getArea() {
-        double area = PI * radius * radius;
-        return area;
+        //karas miangamic return anes
+        return PI * radius * radius;
     }
 
 

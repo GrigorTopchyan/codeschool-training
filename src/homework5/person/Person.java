@@ -42,6 +42,7 @@ public abstract class Person {
     }
 
 
+    //senc pahanj chka piti toString y override aneir
     public abstract String printInfo() ;
 
 }

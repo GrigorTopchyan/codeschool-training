@@ -20,6 +20,7 @@ public class Painter {
     public static void paint(Shape2[] shapes,String color){
 
         for (int i = 0; i <shapes.length ; i++) {
+            //karas kanches verevi paint y
             System.out.println(shapes[i].area()+" color: "+color);
         }
     }
