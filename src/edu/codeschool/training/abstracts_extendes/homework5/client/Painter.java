@@ -11,8 +11,12 @@ public class Painter {
 
     public static void paint(Shape[] shapes, String color) {
         //dasin nayecinq gri
+        for (int i = 0; i <shapes.length ; i++) {
+            Painter.paint(shapes[i],color);
+        }
     }
 
 
 }
+
 

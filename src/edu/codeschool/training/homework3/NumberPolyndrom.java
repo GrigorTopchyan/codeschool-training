@@ -1,24 +1,23 @@
 package edu.codeschool.training.homework3;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class HomeTask4 {
+public class NumberPolyndrom {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int[] arr = HomeTask2.arrayFromNumber(a);
+        int[] arr = NumbersFromArray.arrayFromNumber(a);
         //անունները լավացրու օրինակ կարար լիներ isPolindrome = true;
-        boolean t = true;
+        boolean isPolyndrom = true;
         //սխալա աշխատում դզի օրինակ  23432 ասումա The number is not polyndrom
         for (int i = 0; i < arr.length / 2; i++) {
-            if (arr[i] == arr[arr.length - 1 - i]) {
-                t = false;
+            if (arr[i] != arr[arr.length - 1 - i]) {
+                isPolyndrom = false;
                 break;
             }
 
         }
-        if (t) {
+        if (isPolyndrom) {
             System.out.println("The number is polyndrom");
         } else {
             System.out.println("The number is not polyndrom");

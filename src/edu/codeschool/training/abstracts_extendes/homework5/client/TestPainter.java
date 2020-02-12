@@ -4,9 +4,12 @@ import com.javalesson.controlstatement.Array;
 
 public class TestPainter {
     public static void main(String[] args) {
-        Shape[] shapes = {new Circle(1.5), new Cylinder(1.7, 1.9), new Rectangle(2.8, 1.01)};
-        for (int i = 0; i < shapes.length; i++) {
-            //najel enq gri
-        }
+       Shape [] shapes = {new Circle(12)};
+       Shape [] shapes1 = {new Cylinder(15,2)};
+       Shape [] shapes2 = {new Rectangle(1,5)};
+       Painter.paint(shapes,"Red");
+       Painter.paint(shapes1,"Green");
+       Painter.paint(shapes2,"Yellow");
+
     }
 }

@@ -10,9 +10,12 @@ public class Cylinder extends Shape {
     }
 
     @Override
-    public void area() {
-        double areaOfCylinder = Math.PI * height * radius * radius;
-        //petq chi tpel methody menak makeresy veradrcnelu hamara patasxanatu
-        System.out.println("Area of Cylinder = " + areaOfCylinder);
+    public double area() {
+        return 2 *( Math.PI * radius * radius) + 2 * (Math.PI *radius * height);
+    }
+
+    @Override
+    public String getShapeName() {
+        return shapeName = "Cylinder";
     }
 }

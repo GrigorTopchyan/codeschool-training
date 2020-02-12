@@ -8,7 +8,12 @@ public class Circle extends Shape {
     }
 
     @Override
-    public void area() {
-        //google ara vonc en circle i makeresy hashvum :)
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public String getShapeName() {
+        return shapeName = "Circle";
     }
 }

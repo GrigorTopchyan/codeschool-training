@@ -9,9 +9,9 @@ public class MissinNumber {
         int [] arr = {2,3,6,7,8,1,9,4};
         int sum = 0;
         int sumArray = 0;
-//        for (int i = 0; i <= 9; i++) {
-//            sum+=i;
-//        }
+        for (int i = 0; i <= 9; i++) {
+            sum+=i;
+        }
 
         sum = n *(n + 1)/2 ;
         for (int i = 0; i < arr.length; i++) {

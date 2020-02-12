@@ -2,7 +2,7 @@ package edu.codeschool.training.homework3;
 
 import java.util.Arrays;
 
-public class HomeTask5 {
+public class ArrayPlusArray {
     //պիտի մեթոդ սարքեիք խնդիրը ուշադիր կարդա ։դ
     public static void main(String[] args) {
         int[] array1 = {1, 3, 6, 7, 9, 65};
@@ -19,7 +19,7 @@ public class HomeTask5 {
             newArray[i] = array3[k];
             k++;
         }
-        HomeTask5.sortArrayMinToMax(newArray);
+        ArrayPlusArray.sortArrayMinToMax(newArray);
         System.out.println(Arrays.toString(newArray));
 
         //սենց կաշխատի բայց լավ ալգորիթմ չի որովհետև շատ գործողությունա անում

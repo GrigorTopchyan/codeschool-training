@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //անունները դզի
-public class HomeTask2 {
+public class NumbersFromArray {
     public static void main(String[] args) {
         int n;
         int t;
@@ -19,12 +19,13 @@ public class HomeTask2 {
     }
     public static int [] arrayFromNumber(int number){
         int t;
-        int [] arr = new int[Integer.toString(number).length()];
+        int counter = 0;
+        int [] arr = new int[100];
         while (number != 0) {
             t = number % 10;
             //սենց մի արա մի հատ counter պահի հերթով գումարի
             //օրինակ arr[counter++] = t;
-            arr[Integer.toString(number).length() - 1] = t;
+            arr[counter ++] = t;
             number = (number - t)/10;
         }
         return arr;
