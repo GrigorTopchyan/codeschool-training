@@ -16,6 +16,7 @@ public  class Student {
         counter++;
     }
 
+    //es inch konstructora ??
     public Student(String name, int age, int birthDate) {
 
     }

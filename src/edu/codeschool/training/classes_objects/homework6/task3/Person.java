@@ -2,6 +2,7 @@ package edu.codeschool.training.classes_objects.homework6.task3;
 
 public abstract class Person {
 
+    //dashtery piti private lini
     public String name;
     public String address;
 
@@ -11,6 +12,7 @@ public abstract class Person {
         this.name = name;
         this.address = address;
 
+        //xi es erku hat grel
         this.address = address;
         this.name = name;
     }
