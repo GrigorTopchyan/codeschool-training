@@ -10,7 +10,7 @@ public class Painter {
     }
 
     public static void paint(Shape[] shapes, String color) {
-
+        //dasin nayecinq gri
     }
 
 
