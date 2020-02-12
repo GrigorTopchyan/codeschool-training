@@ -40,6 +40,7 @@ public class Rectangle extends Shape {
     public double getPerimeter(){
         return 2*length + 2*width;
     }
+    //es methody animasa
     public String getSuperString(){
         return super.toString();
     }
