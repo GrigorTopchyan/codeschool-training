@@ -29,7 +29,7 @@ public class Student extends Person {
     @Override
     public String getDescription() {
 
-        return "grade " + grade + " student " + getName();
+        return " Grade: " + grade + '\n' + " Student name: " + getName();
 
     }
 

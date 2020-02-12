@@ -26,6 +26,6 @@ public class Lecturer extends Person {
 
     @Override
     public String getDescription() {
-        return "Name"+getName()+" Subject "+getSubject();
+        return " Lecturer name: " + getName() + '\n' + " Subject: " + getSubject();
     }
 }
