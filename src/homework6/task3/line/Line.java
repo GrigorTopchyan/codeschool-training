@@ -11,6 +11,11 @@ public class Line extends Point {
      */
     private double coordinateX3;
     private double coordinateY3;
+    public Line(double coordinateX1, double coordinateX2, double coordinateY1, double coordinateY2, double coordinateX3, double coordinateY3) {
+        super(coordinateX1, coordinateX1, coordinateY1, coordinateY2);
+        this.coordinateX3 = coordinateX3;
+        this.coordinateY3 = coordinateY3;
+    }
 
     public double getCoordinateX3() {
         return coordinateX3;
@@ -28,18 +33,10 @@ public class Line extends Point {
         this.coordinateY3 = coordinateY3;
     }
 
-    public Line(double coordinateX1, double coordinateX2, double coordinateY1, double coordinateY2, double coordinateX3, double coordinateY3) {
-        super(coordinateX1, coordinateX1, coordinateY1, coordinateY2);
-        this.coordinateX3 = coordinateX3;
-        this.coordinateY3 = coordinateY3;
-    }
 
-    public Line(double x1, double x2, double y1, double y2) {
-        super(x1, x2, y1, y2);
-    }
 
     public boolean isPointOnLine() {
-        return (coordinateX3 - coordinateX1) / (coordinateX2 - coordinateX1) == (coordinateY3 - coordinateY1) / (coordinateY2 - coordinateY1);
+        return (coordinateX3 * (coordinateX2 - coordinateY1) - coordinateY3 * (coordinateX2 - coordinateX1) == 0);
     }
 
 }

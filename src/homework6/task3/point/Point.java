@@ -4,11 +4,7 @@ package homework6.task3.point;
 public class Point {
 
 
-    public static void main(String[] args) {
-        Point point = new Point(1, 2, 2, 4);
-        System.out.println(point.getDistanceBetweenTwoPoints());
-        point.Calculate_Of_The_Coordinates_Of_The_Middle_Of_The_Segment();
-    }
+
 
     /**
      * * 3.0 Գրել կլաս Point, որը կնկարագրի մաթեմատիկական կետը(այսինքն կետի կորդինատները x,y)
