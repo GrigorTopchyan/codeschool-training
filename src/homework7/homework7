@@ -1,0 +1,17 @@
+1. Wrappers
+				1. Implements wrapper by your self (Integer, Double, Character, Boolean)
+				2. Implements at least 3, different methods for each Wrapper Class 
+						ex. int intValue()
+							  int parseInt(String number)
+							  void increment()
+							  Integer plus(Integer other) // minus
+			2. Implement Equals method
+				1. Create an Company class, which has followng properties
+							String name, Address addres, Department[] departments, Contact contact
+				2. Address should contain following properties
+							String country, String city, String street, long postalCode
+				3. Department should contain following properties
+							String name, long employeeCount
+				4. Contact should contain followng properties
+						   String email, String phoneNumber, String mobileNumber
+				5. Override toString and equals method for all custom reference types.
