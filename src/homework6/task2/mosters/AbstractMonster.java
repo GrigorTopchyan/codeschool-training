@@ -1,5 +1,7 @@
 package homework6.task2.mosters;
 
+import homework6.task2.imosters.IMonsters;
+
 /**
  * class AbstractMonster which implements Monster interface and has the name field of type String
  */

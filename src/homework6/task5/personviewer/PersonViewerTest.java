@@ -13,13 +13,15 @@ public class PersonViewerTest {
      * c. Can you identify what is happening?
      */
     public static void main(String[] args) {
-        IPerson lecturer = new Lecturer("L", "lector@gmail.com", "Mathematics");
-        IPerson employee = new Employee("E", "employee@gmail.com", "banks");
-        IPerson student = new Student("S", "student", 'A');
+        IPerson lecturer = new Lecturer("Arman", "lector@gmail.com", "Mathematics");
+        IPerson employee = new Employee("Alex", "employee@gmail.com", "banks");
+        IPerson student = new Student("Ani", "student@gmaail.com", 'A');
         IPerson[] people = {lecturer, employee, student};
 
         PersonViewer personViewer = new PersonViewer();
-        personViewer.viewer(people);
+        for (int i = 0; i <people.length ; i++) {
+            System.out.println(personViewer.viewer(people[i]));
+        }
 
 
     }

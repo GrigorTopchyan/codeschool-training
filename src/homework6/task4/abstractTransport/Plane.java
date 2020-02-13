@@ -11,15 +11,7 @@ public abstract class Plane extends Transport {
         return super.getColor();
     }
 
-    @Override
-    public void stop() {
 
-    }
-
-    @Override
-    public void start() {
-
-    }
 
 
 }

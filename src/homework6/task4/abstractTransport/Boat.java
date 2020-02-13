@@ -15,4 +15,9 @@ public abstract class Boat extends Transport {
     public void setHasEngine(boolean hasEngine) {
         this.hasEngine = hasEngine;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "   hasEngine=" + hasEngine+'\n';
+    }
 }

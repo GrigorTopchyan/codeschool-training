@@ -1,4 +1,4 @@
-package homework6.task3;
+package homework6.task3.point;
 
 import homework6.task3.point.Point;
 

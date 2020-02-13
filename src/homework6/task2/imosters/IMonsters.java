@@ -1,4 +1,4 @@
-package homework6.task2.mosters;
+package homework6.task2.imosters;
 
 /**
  * interface Monster which has following method

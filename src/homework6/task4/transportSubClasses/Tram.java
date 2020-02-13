@@ -10,17 +10,22 @@ public class Tram extends Train {
     }
 
     @Override
-    public void stop() {
-
-    }
-
-    @Override
     public void start() {
-
+        System.out.println("Tram is started");
     }
 
     @Override
     public void move(double distance) {
+        System.out.println("Tram move distance "+distance);
+    }
 
+    @Override
+    public void stop() {
+        System.out.println("Tram Airplane is stopped");
+    }
+
+    @Override
+    public String toString() {
+        return "Tram: "+'\n' + super.toString();
     }
 }

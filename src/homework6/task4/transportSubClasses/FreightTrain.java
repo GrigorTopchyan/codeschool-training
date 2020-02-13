@@ -19,17 +19,24 @@ public class FreightTrain extends Train {
     }
 
     @Override
-    public void stop() {
-
-    }
-
-    @Override
     public void start() {
-
+        System.out.println("Freight train is started");
     }
 
     @Override
     public void move(double distance) {
+        System.out.println("Freight train move distance " + distance);
+    }
 
+    @Override
+    public void stop() {
+        System.out.println("Freight train is stopped");
+    }
+
+
+    @Override
+    public String toString() {
+        return "FreightTrain: "+'\n'+ super.toString() +
+                "   Carrying Capacity:" + carryingCapacity+'\n' ;
     }
 }

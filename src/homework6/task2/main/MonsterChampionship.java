@@ -1,4 +1,9 @@
-package homework6.task2.mosters;
+package homework6.task2.main;
+
+import homework6.task2.imosters.IMonsters;
+import homework6.task2.mosters.FireMonster;
+import homework6.task2.mosters.StoneMonster;
+import homework6.task2.mosters.WaterMonster;
 
 public class MonsterChampionship {
     public static void main(String[] args) {

@@ -8,17 +8,22 @@ public class PassengerPlane extends Plane {
     }
 
     @Override
-    public void stop() {
-
-    }
-
-    @Override
     public void start() {
-
+        System.out.println("Passenger Airplane is started");
     }
 
     @Override
     public void move(double distance) {
+        System.out.println("Passenger Airplane move distance "+distance);
+    }
 
+    @Override
+    public void stop() {
+        System.out.println("Passenger Airplane is stopped");
+    }
+
+    @Override
+    public String toString() {
+        return "PassengerPlane: "+'\n'+ super.toString();
     }
 }

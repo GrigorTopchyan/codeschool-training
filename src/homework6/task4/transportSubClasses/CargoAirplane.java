@@ -22,17 +22,23 @@ public class CargoAirplane extends Plane {
     }
 
     @Override
-    public void stop() {
-
-    }
-
-    @Override
     public void start() {
-
+        System.out.println("Cargo Airplane is started");
     }
 
     @Override
     public void move(double distance) {
+        System.out.println("Cargo Airplane move distance "+distance);
+    }
 
+    @Override
+    public void stop() {
+        System.out.println("Cargo Airplane is stopped");
+    }
+
+    @Override
+    public String toString() {
+        return "CargoAirplane: "+'\n' +  super.toString() +
+                "   Carrying Capacity:" + carryingCapacity+'\n' ;
     }
 }

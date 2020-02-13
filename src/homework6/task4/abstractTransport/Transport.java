@@ -33,5 +33,9 @@ public abstract class Transport implements IVehicle {
         this.maxSpeed = maxSpeed;
     }
 
+    @Override
+    public String toString() {
+        return "   Color: " + color + '\n' + "   MaxSpeed: " + maxSpeed +'\n' ;
 
+    }
 }

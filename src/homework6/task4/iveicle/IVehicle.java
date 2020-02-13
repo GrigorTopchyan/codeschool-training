@@ -5,8 +5,7 @@ package homework6.task4.iveicle;
  *               stop, start, move(double distance)
  */
 public interface IVehicle {
-    void stop();
     void start();
     void move(double distance);
-
+    void stop();
 }

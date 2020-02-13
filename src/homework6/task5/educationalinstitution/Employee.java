@@ -24,6 +24,6 @@ public class Employee extends Person {
 
     @Override
     public String getDescription() {
-        return "Employee name: " + getName() + '\n' + " Department: " + getDepartment();
+        return "Employee name: " + getName() + '\n' +"Email: " + getEmail()+ '\n'+"Department: " + getDepartment();
     }
 }
