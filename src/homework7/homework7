@@ -14,4 +14,4 @@
 							String name, long employeeCount
 				4. Contact should contain followng properties
 						   String email, String phoneNumber, String mobileNumber
-				5. Override toString and equals method for all custom reference types.
+			 	5. Override toString and equals method for all custom reference types.
