@@ -1,9 +1,10 @@
 package edu.codeschool.training.classes_objects.homework6.task3;
 
 public class Employee extends Person {
-    //dashtery piti private lini
-    public String office;
-    public double salary;
+    private String office;
+    private double salary;
+    private String name;
+    private String address;
 
     public Employee(String name, String adress, String office, double salary) {
         super(name, adress);

@@ -6,10 +6,8 @@ public class Dog extends Animal {
         super(name);
     }
 
-
-    //greeting y xia name y veradarcnum
     @Override
     public String greeting() {
-        return getName();
+        return greeting();
     }
 }

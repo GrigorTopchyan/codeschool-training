@@ -7,10 +7,9 @@ public class Cat extends Animal {
         super(name);
     }
 
-    //xia name y veradarcnum ?
     @Override
     public String greeting() {
-        return super.getName();
+        return greeting();
 
     }
 }
