@@ -10,8 +10,6 @@ public abstract class Person {
         this.name = name;
         this.address = address;
 
-        this.address = address;
-        this.name = name;
     }
 
     public String getName() {
