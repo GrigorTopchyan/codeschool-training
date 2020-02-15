@@ -2,6 +2,9 @@ package homework6.task3.line;
 
 import homework6.task3.point.Point;
 
+//Line classy chpiti jarangi Point classin
+//Line y piti unena erku Point tipi dasht start u end
+//Ancac dasin nayel enq uxxi
 public class Line extends Point {
     /**
      * 3.1 Գրել կլաս Line, որը կնկարագրի մաթեմատիկական ուղղիղը(այսինքն ուղղի սկզբնակետը և վերջնակետը)

@@ -12,6 +12,9 @@ public class Point {
      * * -Երկու կետերի միջև հեռավորությունը
      * * -Երկու կետերի միջնակետը
      */
+
+    //pointy piti erku cordinate unena x, y
+    //ancac dasin nayel enq uxxi
     public double coordinateX1;
     public double coordinateX2;
     public double coordinateY1;
@@ -68,6 +71,4 @@ public class Point {
 
         System.out.println("Coordinates Of The Middle Of The Segment XY" + "(" + cX + ", " + cY + ")");
     }
-
-
 }
