@@ -3,6 +3,8 @@ package edu.training.codeschool.HomeWork;
 import edu.training.codeschool.HomeWork.Person;
 
 public class Employ extends Person {
+    //dashtery piti private lini
+    //encapsulation ches pahel
     public String office;
     public double salary;
 
@@ -24,6 +26,7 @@ public class Employ extends Person {
         return salary;
     }
 
+    //validacia ara salary in chpiti bacasakan lini
     public void setSalary(double salary) {
         this.salary = salary;
     }

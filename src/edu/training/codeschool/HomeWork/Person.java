@@ -1,6 +1,7 @@
 package edu.training.codeschool.HomeWork;
 
 public abstract class Person {
+    //dashty piti private lini
     public String name;
     {
         name = "Jhon";

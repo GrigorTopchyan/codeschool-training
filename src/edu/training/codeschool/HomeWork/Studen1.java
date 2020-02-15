@@ -1,6 +1,7 @@
 package edu.training.codeschool.HomeWork;
 
 public class Studen1 extends Person {
+    //dashtery piti private lini encapsulation ches pahel
         public String university;
         public double fee;
 
