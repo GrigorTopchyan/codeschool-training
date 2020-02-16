@@ -10,7 +10,8 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public void area() {
+    public double area() {
 
+        return 0;
     }
 }

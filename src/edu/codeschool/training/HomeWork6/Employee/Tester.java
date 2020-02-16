@@ -9,6 +9,6 @@ public class Tester extends Employee {
 
     @Override
     void doWork() {
-
+        System.out.println("inside Tester");
     }
 }

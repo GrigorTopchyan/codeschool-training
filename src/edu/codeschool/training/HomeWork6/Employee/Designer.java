@@ -7,8 +7,17 @@ public class Designer extends Employee {
 
     @Override
     void doWork() {
-
+        System.out.println("inside Designer");
     }
 
     public void design(){};
+
+    @Override
+    public String toString() {
+        return "Designer{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                "} ";
+    }
 }

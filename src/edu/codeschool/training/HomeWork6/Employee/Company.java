@@ -1,21 +1,28 @@
 package edu.codeschool.training.HomeWork6.Employee;
 
+import java.util.Arrays;
+
 public class Company {
-    Employee [] array = {new Designer("Des",21,200),new Programmer("Prog",22,400),new Tester("Test",21,600)};
+
+    private int arraySize = 0;
+    Employee [] array = new Employee[12];
     public Employee [] hireEmployee(Employee employee) {
-        Employee[] array1 = new Employee[array.length + 1];
-        for (int i = 0; i <array1.length ; i++) {
-            for (int j = 0; j <array.length ; j++) {
-            array1[i] = array[j];
-            array1[array1.length - 1] = employee;
+        if(arraySize == array.length){
+            Employee[] array1 = new Employee[array.length * 2];
+            for (int i = 0; i <array.length ; i++) {
+                    array1[i] = array[i];
             }
-
+            array = array1;
         }
-        return array1;
+        array[arraySize++] = employee;
+        return array;
 
 
     }
-    //public Employee [] fireEmployee(Employee employee){
 
+    public void startToWorking(){
+        for (int i = 0; i <array.length ; i++) {
+            array[i].doWork();
+        }
     }
-//}
+}

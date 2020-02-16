@@ -1,23 +1,21 @@
 package edu.codeschool.training.HomeWork6.LineAndPoint;
 
 public class Point {
-    double coordinateX;
-    double coordinateY;
 
-    public Point(double coordinateX, double coordinateY) {
-        this.coordinateX = coordinateX;
-        this.coordinateY = coordinateY;
-    }
-    public boolean equals(Object o){
-        Point c = (Point) o;
-        return c.coordinateX == coordinateX && c.coordinateY == coordinateY;
+    double x;
+    double y;
+
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
 
-    static double distanceCoordinates(Point number1, Point number2) {
-        return Math.sqrt(Math.toDegrees(number2.coordinateX - number1.coordinateX) + Math.toDegrees(number2.coordinateY - number1.coordinateY));
+
+    static double distanceCoordinate(Point point1, Point point2) {
+        return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
     }
 
-    private void midpointCoordinates(Point number1,Point number2) {
-        System.out.println("Coordinate 1:" + (number2.coordinateX - number1.coordinateX) + "\n Coordinate 2:" + (number2.coordinateY -number1.coordinateY) );
+    private Point midpoint(Point point1, Point point2) {
+        return new Point((point2.x + point1.x) / 2, (point2.y + point1.y) / 2);
     }
 }
