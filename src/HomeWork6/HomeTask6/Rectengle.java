@@ -1,6 +1,6 @@
 package HomeWork6.HomeTask6;
 
-public class Rectengle extends HomeTask6.Shape {
+public class Rectengle extends HomeWork6.HomeTask6.Shape {
     private double width;
     private double height;
 
@@ -12,8 +12,6 @@ public class Rectengle extends HomeTask6.Shape {
 
     @Override
     public double area() {
-        //karas miangamic veradarcnes
-        double area=width*height;
-        return area;
+        return width*height;
     }
 }

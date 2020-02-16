@@ -1,5 +1,5 @@
-// package i name sxal es grel piti  HomeWork6.HomeTask6;
-package HomeTask6;
+
+package HomeWork6.HomeTask6;
 
 public abstract class Shape {
    public String shapeName;

@@ -2,7 +2,7 @@ package HomeWork5;
 
 import java.util.Arrays;
 
-public class HomeTask5 {
+public class ArraysToArraty {
     public static void main(String[] args) {
         int [] array1= {1,3,6,7,9};
         int [] array2={2,4,5,8};

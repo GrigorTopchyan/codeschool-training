@@ -7,7 +7,6 @@ public class Akita extends Dog {
 
     @Override
     public void greeting() {
-        //anmasta ete implementacian ches poxum
-        super.greeting();
+        System.out.println("Akita greeting af-af");
     }
 }

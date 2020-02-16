@@ -13,7 +13,14 @@ import java.util.Date;
      private String name;
      private int age;
      //arden import es arel karas miangamic Date gres
-     private java.util.Date birthDate;
+     private Date birthDate;
+    private static int countOfCreatedObjects =0;{
+        countOfCreatedObjects++;
+    }
+
+    public static int getCountOfCreatedObjects() {
+        return countOfCreatedObjects;
+    }
 
     public Student(String name, int age, Date birthDate) {
         this.name = name;
@@ -30,13 +37,6 @@ import java.util.Date;
                 '}';
     }
 
-    //dashty verevy haytarari
-    //private haytarari
-    //method gri tox veradarcni orinak getCreatedObjectsCount()
-    //anuny lav dir orinak countOfCreatedObjects
-    public static int calculateStudent=0;{
-            calculateStudent++;
-        }
 
 
     }

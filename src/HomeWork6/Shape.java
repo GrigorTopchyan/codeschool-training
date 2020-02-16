@@ -1,13 +1,12 @@
 package HomeWork6;
 
 public class Shape {
-    //dashtery private sarqi
     //encasulation ches pahel
-    String color;
-    boolean filled;
+    private String color;
+    private boolean filled;
 
     public Shape() {
-        this.color = "greeen";
+        this.color = "green";
         this.filled = true;
     }
 

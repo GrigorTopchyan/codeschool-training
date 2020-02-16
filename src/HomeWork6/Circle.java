@@ -17,9 +17,8 @@ public class Circle extends Shape {
 
 
     public double getArea(){
-        //karas miangamic veradrcnes
-        double a=this.radius*this.radius*Math.PI;
-        return a;
+
+        return this.radius*this.radius*Math.PI;
     }
     public double getPerimeter(){
         double p =2*Math.PI*this.radius;
@@ -28,10 +27,8 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return
-                "A Circle with radius= " + radius +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
+        return "Circle{" +
+                "radius=" + radius +
                 '}';
     }
 }

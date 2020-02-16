@@ -1,10 +1,9 @@
 package HomeWork6;
 
-public class Employee extends Person {
-    //dashtery private sarqi
-    //encapsulacian ches pahel
-    public String office;
-    public double salary;
+public class  Employee extends Person {
+    private String office;
+    private double salary;
+
 
     public Employee(String name, String address, String office, double salary) {
         super(name, address);

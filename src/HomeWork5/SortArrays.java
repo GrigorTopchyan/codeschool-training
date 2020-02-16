@@ -1,6 +1,6 @@
 package HomeWork5;
 
-public class HomeTask3 {
+public class SortArrays {
     public static void main(String[] args) {
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
