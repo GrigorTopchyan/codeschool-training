@@ -1,0 +1,16 @@
+	1.1.Crate City class that contains following fields
+					1. String name
+					2. long countOfResidents
+					3. double surface
+				1.2. Create Province class that contains following fields
+					1. String name
+					2. long mobileCode
+					3. City centreCity
+					4. City[] cities
+				1.3. Create Country class that contains following fields
+					1. String name
+					2. String nationality
+					3. City capital
+					4. Province[] province
+				1.4. Use Object's clone method to clone the object of Country class
+                1.5. Make Country class immutable
