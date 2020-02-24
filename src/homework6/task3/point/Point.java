@@ -12,62 +12,50 @@ public class Point {
      * * -Երկու կետերի միջև հեռավորությունը
      * * -Երկու կետերի միջնակետը
      */
-    public double coordinateX1;
-    public double coordinateX2;
-    public double coordinateY1;
-    public double coordinateY2;
+
+    //pointy piti erku cordinate unena x, y
+    //ancac dasin nayel enq uxxi
+    public double coordinateX;
+
+    public double coordinateY;
 
 
-    public Point(double x1, double x2, double y1, double y2) {
-        this.coordinateX1 = x1;
-        this.coordinateX2 = x2;
-        this.coordinateY1 = y1;
-        this.coordinateY2 = y2;
+    public Point(double x, double y) {
+        this.coordinateX = x;
+
+        this.coordinateY = y;
+
     }
 
-    public double getCoordinateX1() {
-        return coordinateX1;
+    public double getCoordinateX() {
+        return coordinateX;
     }
 
-    public void setCoordinateX1(double coordinateX1) {
-        this.coordinateX1 = coordinateX1;
+    public void setCoordinateX(double coordinateX) {
+        this.coordinateX = coordinateX;
     }
 
-    public double getCoordinateX2() {
-        return coordinateX2;
+
+
+    public double getCoordinateY() {
+        return coordinateY;
     }
 
-    public void setCoordinateX2(double coordinateX2) {
-        this.coordinateX2 = coordinateX2;
+    public void setCoordinateY(double coordinateY) {
+        this.coordinateY = coordinateY;
     }
 
-    public double getCoordinateY1() {
-        return coordinateY1;
-    }
 
-    public void setCoordinateY1(double coordinateY1) {
-        this.coordinateY1 = coordinateY1;
-    }
 
-    public double getCoordinateY2() {
-        return coordinateY2;
-    }
-
-    public void setCoordinateY2(double coordinateY2) {
-        this.coordinateY2 = coordinateY2;
-    }
-
-    public double getDistanceBetweenTwoPoints() {
-        double distance = Math.sqrt(((coordinateX2 - coordinateX1) * (coordinateX2 - coordinateX1)) + ((coordinateY2 - coordinateY1) * (coordinateY2 - coordinateY1)));
+    public static double getDistanceBetweenTwoPoints(Point point1,Point point2) {
+        double distance = Math.sqrt((Math.pow(point2.coordinateX - point1.coordinateX,2)) + (Math.pow(point2.coordinateY - point1.coordinateY,2) ));
         return distance;
     }
 
-    public void Calculate_Of_The_Coordinates_Of_The_Middle_Of_The_Segment() {
-        double cX = (coordinateX1 + coordinateX2) / 2;
-        double cY = (coordinateY1 + coordinateY2) / 2;
+    public static void Calculate_Of_The_Coordinates_Of_The_Middle_Of_The_Segment(Point point1,Point point2) {
+        double cX = (point1.coordinateX + point2.coordinateX) / 2;
+        double cY = (point1.coordinateY + point2.coordinateY) / 2;
 
         System.out.println("Coordinates Of The Middle Of The Segment XY" + "(" + cX + ", " + cY + ")");
     }
-
-
 }
