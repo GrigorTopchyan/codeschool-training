@@ -1,6 +1,6 @@
 package homework8;
 
-public class City {
+public class City implements Cloneable {
     private String name;
     private long countOfResidents;
     private double surface;
@@ -14,6 +14,10 @@ public class City {
         this.surface = surface;
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
     @Override
     public String toString() {

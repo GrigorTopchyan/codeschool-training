@@ -7,7 +7,7 @@ public class Main {
                 new City("Goris", 556565L, 965),
                 new City("Meghri", 521565L, 4834),
                 new City("Sisian", 123456L, 56),
-                new City("Kadjaran", 123456L, 56)
+                new City("Kadjaran", 73456L, 89)
         };
         City[] citiesOfShirakProvince = {
                 new City("Gyumri", 45667877L, 23),
@@ -19,7 +19,7 @@ public class Main {
                 new City("Razdan", 12234L, 63),
                 new City("Eghvard", 1234343L, 963),
                 new City("Tcaghkadzor", 354545L, 435),
-                new City("Abovyan", 354545L, 435),
+                new City("Abovyan", 43445L, 5435),
 
         };
 
@@ -39,10 +39,10 @@ public class Main {
         System.out.println("shallow cloning");
         Country country1 = (Country) country.clone();
         System.out.println(country1);
-        System.out.println("deep cloning");
-        Country deepCopyCountry = Country.deepCloningCountry(country);
-
-        System.out.println(deepCopyCountry);
+//        System.out.println("deep cloning");
+//        Country deepCopyCountry = Country.deepCloningCountry(country);
+//
+//        System.out.println(deepCopyCountry);
 
     }
 }

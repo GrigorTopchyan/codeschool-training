@@ -10,32 +10,29 @@ public class Country implements Cloneable {
     public Country() {
     }
 
-    public Country(String countryName, String nationality, City capital, Province[] province) {
+    public Country(String countryName, String nationality, City capital, Province[] province) throws CloneNotSupportedException {
         this.countryName = countryName;
         this.nationality = nationality;
-        this.capital = capital;
+        this.capital = (City) capital.clone();
+        this.province = province.clone();
+    }
+
+    public City getCityName() throws CloneNotSupportedException {
+
+        return (City) country.clone();
+    }
+
+    public void setProvince(Province[] province) {
         this.province = province;
     }
 
-    public Country setCountryName(String countryName) {
-        country = new Country(countryName, this.nationality, this.capital, this.province);
-        return country;
+    public void setCapital(City capital) {
+        this.capital = capital;
     }
 
+    public Province[] getProvince() {
 
-    public Country setNationality(String nationality) {
-        country = new Country(this.countryName, nationality, this.capital, this.province);
-        return country;
-    }
-
-    public Country setCapital(City capital) {
-        country = new Country(this.countryName, this.nationality, capital, this.province);
-        return country;
-    }
-
-    public Country setProvince(Province[] province) {
-        country = new Country(this.countryName, this.nationality, this.capital, province);
-        return country;
+        return province.clone();
     }
 
 
@@ -52,6 +49,9 @@ public class Country implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
+        Country countryClone = (Country) super.clone();
+        countryClone.setCapital((City) capital.clone());
+        countryClone.setProvince(province.clone());
         return super.clone();
     }
 
