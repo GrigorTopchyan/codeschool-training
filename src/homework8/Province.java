@@ -1,6 +1,5 @@
 package homework8;
 
-import java.util.Arrays;
 
 public class Province {
     private String name;
@@ -8,8 +7,8 @@ public class Province {
     private City centreCity;
     private City[] cities;
 
-//    public Province() {
-//    }
+    public Province() {
+    }
 
     public Province(String name, long mobileCode, City centreCity, City[] cities) {
         this.name = name;
@@ -19,16 +18,12 @@ public class Province {
     }
 
 
-
-
-
     @Override
     public String toString() {
-        return "Province name: " +
-                name + '\n' +
-                "  MobileCode: " + mobileCode +'\n' +
-                "  Centre City: " + centreCity +'\n' +
-                "  Cities=" + Arrays.toString(cities);
+        return "Province: " + name + '\n' +
+                "MobileCode: " + mobileCode + '\n' +
+                "Centre City: " + centreCity + '\n' +
+                "Cities: " + '\n' + ArrToString.getToString(cities);
 
     }
 }

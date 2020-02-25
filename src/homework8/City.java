@@ -5,8 +5,8 @@ public class City {
     private long countOfResidents;
     private double surface;
 
-//    public City() {
-//    }
+    public City() {
+    }
 
     public City(String name, long countOfResidents, double surface) {
         this.name = name;
@@ -15,12 +15,10 @@ public class City {
     }
 
 
-
     @Override
     public String toString() {
-        return  "  " +
-                 name + '\n' +
-                "     Count of residents: " + countOfResidents +'\n'+
-                "     Surface: " + surface +'\n';
+        return  name + '\n' +
+                "     Count of residents: " + countOfResidents + '\n' +
+                "     Surface: " + surface + '\n';
     }
 }
