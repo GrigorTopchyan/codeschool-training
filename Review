@@ -154,11 +154,22 @@ Polymorphism
         Shallow cloning
         Deep cloning
     Immutable objects
+
+
     String pool
+    Nested Inner Classes
+        Inner Classes
+        Static Nested Classes
+        Local inner classes
+        Anonymous classes
 
-    Inner classes
     Enum
+      How to declare enums
+      Enums as classes, Fields, Methods and Constructors in Enums
+      Enums in switch case
 
+
+    Multidimensional arrays
 
 
 
