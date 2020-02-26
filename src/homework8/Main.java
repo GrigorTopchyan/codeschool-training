@@ -34,15 +34,16 @@ public class Main {
 
 
         Country country = new Country("Armenia", "Armenian", capitalOfCountry, provinces);
+        System.out.println();
         System.out.println(country);
 
-        System.out.println("shallow cloning");
-        Country country1 = (Country) country.clone();
-        System.out.println(country1);
-//        System.out.println("deep cloning");
-//        Country deepCopyCountry = Country.deepCloningCountry(country);
-//
-//        System.out.println(deepCopyCountry);
+        System.out.println(" Cloning");
+
+        City capitalOfCountry1 = new City("Yerevan111", 125346878L, 4545);
+        country.setCapital(capitalOfCountry1);
+
+        System.out.println(country);
+
 
     }
 }

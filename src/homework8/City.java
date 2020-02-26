@@ -14,9 +14,33 @@ public class City implements Cloneable {
         this.surface = surface;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getCountOfResidents() {
+        return countOfResidents;
+    }
+
+    public void setCountOfResidents(long countOfResidents) {
+        this.countOfResidents = countOfResidents;
+    }
+
+    public double getSurface() {
+        return surface;
+    }
+
+    public void setSurface(double surface) {
+        this.surface = surface;
+    }
+
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    protected City clone() throws CloneNotSupportedException {
+        return (City) super.clone();
     }
 
     @Override

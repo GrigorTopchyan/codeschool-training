@@ -1,58 +1,63 @@
 package homework8;
 
-public class Country implements Cloneable {
-    private String countryName;
+public final class Country implements Cloneable {
+    private  String countryName;
     private String nationality;
     private City capital;
     private Province[] province;
 
-
-    public Country() {
-    }
-
     public Country(String countryName, String nationality, City capital, Province[] province) throws CloneNotSupportedException {
         this.countryName = countryName;
         this.nationality = nationality;
-        this.capital = (City) capital.clone();
+        this.capital = capital.clone();
         this.province = province.clone();
     }
 
-    public City getCityName() throws CloneNotSupportedException {
+    public Country() {
 
-        return (City) capital.clone();
     }
 
-    public void setProvince(Province[] province) {
-        this.province = province;
+    public Country setCountryName(String countryName) throws CloneNotSupportedException {
+
+        return new Country(countryName, this.nationality, this.capital, this.province);
     }
 
-    public void setCapital(City capital) {
-        this.capital = capital;
+    public Country setNationality(String nationality) throws CloneNotSupportedException {
+
+        return new Country(this.countryName, nationality, this.capital, this.province);
+    }
+
+    public Country setCapital(City capital) throws CloneNotSupportedException {
+        return new Country(this.countryName, this.nationality, capital, this.province);
+    }
+
+    public Country setProvince(Province[] province) throws CloneNotSupportedException {
+        return new Country(this.countryName, this.nationality, this.capital, province);
+    }
+
+    public String getCountryName() {
+        return countryName;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public City getCapital() {
+        return capital;
     }
 
     public Province[] getProvince() {
-
-        return province.clone();
+        return province;
     }
 
-
-////////deep cloning
-    public static Country deepCloningCountry(  Country country){
-        Country cloneCountry = new Country();
-        cloneCountry.countryName=country.countryName;
-        cloneCountry.nationality=country.nationality;
-        cloneCountry.capital=country.capital;
-        cloneCountry.province=country.province;
-        return cloneCountry;
-    }
-
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        Country countryClone = (Country) super.clone();
-        countryClone.setCapital((City) capital.clone());
-        countryClone.setProvince(province.clone());
-        return super.clone();
+    public static Country createCloneCountry(Country country) {
+        Country countryClone = new Country();
+        countryClone.countryName = country.countryName;
+        countryClone.nationality = country.nationality;
+        countryClone.capital = country.capital;
+        countryClone.province = country.province;
+        return countryClone;
     }
 
 
