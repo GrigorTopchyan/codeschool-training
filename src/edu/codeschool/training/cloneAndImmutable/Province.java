@@ -1,0 +1,14 @@
+package edu.codeschool.training.cloneAndImmutable;
+
+public class Province implements Cloneable {
+    private String name;
+    private long mobileCode;
+    private City centreCity;
+    private City[] cities;
+
+
+    @Override
+    protected Province clone() throws CloneNotSupportedException {
+        return (Province) super.clone();
+    }
+}

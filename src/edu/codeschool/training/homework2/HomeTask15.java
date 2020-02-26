@@ -5,7 +5,6 @@ package edu.codeschool.training.homework2;
 
 public class HomeTask15 {
     public static void main(String[] args) {
-        int a;
         for (int i = 10; i <= 100; i++) {
             if (i % 3 == 0 && i % 7 != 0) {
                 System.out.print(i + ",");
