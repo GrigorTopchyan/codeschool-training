@@ -150,7 +150,10 @@ Polymorphism
 
 
     Memory Structure
-    object cloning
+        Heap
+        Stack
+        Metaspace
+    Object cloning
         Shallow cloning
         Deep cloning
     Immutable objects
@@ -172,7 +175,9 @@ Polymorphism
     Multidimensional arrays
 
 
-
+Courses
+Введение в Java Технострим
+https://www.youtube.com/watch?v=IoTkYtSUe-4&list=PLrCZzMib1e9pz7f30YqoBLY0_AfiC36kM&index=4
 
 
 
