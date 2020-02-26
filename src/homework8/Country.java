@@ -5,7 +5,7 @@ public class Country implements Cloneable {
     private String nationality;
     private City capital;
     private Province[] province;
-    Country country;
+
 
     public Country() {
     }
@@ -19,7 +19,7 @@ public class Country implements Cloneable {
 
     public City getCityName() throws CloneNotSupportedException {
 
-        return (City) country.clone();
+        return (City) capital.clone();
     }
 
     public void setProvince(Province[] province) {
