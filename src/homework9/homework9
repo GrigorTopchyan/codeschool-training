@@ -1,0 +1,35 @@
+		1.  Inner classes
+				1.1 Create class Application which contains following:
+					User [] users - array of users
+					a) Nested static class with name ApplicationType, which contains following final static fields
+						1. String FACEBOOK
+						2. String VIBER
+						3. String GMAIL
+					b) User inner calss, which contains following fields
+						1. String userName
+						2. String password
+					    3. String applicationType
+						4. boolean isLoggedIn with default value false
+						5. Constructor with 3 arguments (String userName, String password, String applicationType)
+						6. getter/setters
+						7. method login (set isLoggedIn field true)
+						8. method logout (set isLoggedIn field false)
+					c) Inner LoggedIn interface with a method isLoggedIn(User user)
+					d) void addUser(String userName, String password, String applicationType) - should create new user with the parameters and add to array
+					e) void deleteUser(String userName)
+						Create an local class Finder inside deleteUser method, which will find user by userName,
+						 if Aplication.this.users contains user by given userName, remove this user from array
+					f) User[] allLoggedInUsers()
+						Invoke LoggedIn interface as annanymous class inside this method and retrun all logged in users.
+			2. Crearte class with name CustomString which should have all bellow mentioned methods and fields
+			   The class should be immutable.
+			    char[] characters
+				char charAt(int index)
+				boolean contains(String s)
+				String toUpperCase()
+				int length()
+				int indexOf(int ch)
+				int lastIndexOf(int ch)
+				boolean startsWith(String prefix)
+			    boolean endsWith(String suffix)
+				String revers ()
