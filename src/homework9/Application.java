@@ -3,15 +3,16 @@ package homework9;
 import java.util.Arrays;
 
 public class Application {
+    //    int userCount = 1;
     private User[] users;
-    int userCount = 1;
+
     static class ApplicationType {
         public final static String FACEBOOK = "FACEBOOK";
         public final static String VIBER = "VIBER";
         public final static String GMAIL = "GMAIL";
     }
 
-     class User {
+    static class User {
         private String userName;
         private String password;
         private String applicationType;
@@ -67,29 +68,29 @@ public class Application {
         }
     }
 
-    public void addUser(String userName, String password, String applicationType) {
-        Application.User user = new User(userName, password, applicationType);
+    public void addUser(String userName, String password, String appType) {
+        int count = 1;
 
-        userCount++;
-        users = new User[userCount];
+        Application.User user = new User(userName, password, appType);
+        count++;
 
+        users = new User[count];
         for (int i = 0; i < users.length; i++) {
+            users[i] = user;
             if (i == (users.length - 1)) {
-                users[i] = user;
+                User[] users1 = new User[2 * users.length];
+                Arrays.fill(users1, users[i]);
+                System.out.println(Arrays.toString(users1));
             }
-            System.out.println(Arrays.toString(users));
+//            System.out.println(Arrays.toString(users));
         }
 
     }
 
     public void deleteUser(String userName) {
 
-//        User[] uz = new User[users.length-1] ;
         for (int i = 0; i < Application.this.users.length - 1; i++) {
             if (Application.this.users[i].getUserName().equals(userName)) {
-                Application.this.users[i].setUserName("");
-                Application.this.users[i].setApplicationType("");
-                Application.this.users[i].setPassword("");
 
 
             }

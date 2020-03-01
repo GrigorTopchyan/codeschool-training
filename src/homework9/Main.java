@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Application application = new Application();
+        Application application1 = new Application();
+        Application application2 = new Application();
 
 
         application.addUser("A","123", Application.ApplicationType.VIBER);
