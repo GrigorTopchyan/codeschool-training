@@ -126,9 +126,7 @@ public class Application {
         new LoggedIn() {
             @Override
             public void isLoggedIn(User user) {
-                for (int i = 0; i <users.length ; i++) {
-                    users[i] = user;
-                }
+                Arrays.fill(users, user);
             }
         };
         return users;
