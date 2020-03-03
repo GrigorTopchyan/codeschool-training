@@ -1,6 +1,6 @@
 package edu.codeschool.training.classes_objects.homeWork9;
 
-public class Province {
+public class Province implements Cloneable {
     private String name;
 	private long mobileCode;
 	private City centreCity;

@@ -1,6 +1,6 @@
 package edu.codeschool.training.classes_objects.homeWork9;
 
-public class City {
+public class City implements Cloneable {
     private String name;
 	private long countOfResidents;
 	private double surface;
