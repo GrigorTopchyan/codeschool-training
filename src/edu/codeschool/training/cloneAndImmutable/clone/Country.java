@@ -6,7 +6,7 @@ public class Country {
     private String name;
     private String nationality;
     private City capital;
-    Province [] provinces;
+     Province [] provinces;
 
     public Country(String name, String nationality, City capital, Province[] provinces) {
         this.name = name;

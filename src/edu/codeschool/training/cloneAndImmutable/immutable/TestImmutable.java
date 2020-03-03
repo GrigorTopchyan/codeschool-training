@@ -1,13 +1,16 @@
 package edu.codeschool.training.cloneAndImmutable.immutable;
 
 public class TestImmutable {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
 
-        City city = new City("Armavir",100,25);
-        City [] cities = {city};
-        Province province = new Province("Yerevan",374,city,cities);
+        City armavir = new City("Armavir",100,25);
+        City [] cities = {armavir};
+        Province province = new Province("Yerevan",374,armavir,cities);
         Province [] provinces = {province};
-        Country country = new Country("Armenia","Hay",city,provinces);
+        Country country = new Country("Armenia","Hay",new City("Armavir",100,25),provinces);
+        City c = country.getCapital();
+        c.setCountOfResidents(15);
+        System.out.println(country.getCapital());
 
     }
 

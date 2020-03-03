@@ -11,8 +11,8 @@ public class Province implements Cloneable {
     public Province(String name, long mobileCode, City centreCity, City[] cities) throws CloneNotSupportedException {
         this.name = name;
         this.mobileCode = mobileCode;
-        this.centreCity =(City)centreCity.clone();
-        this.cities = cities.clone();
+        this.centreCity =centreCity;
+        this.cities = cities;
     }
 
 

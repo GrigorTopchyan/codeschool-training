@@ -1,9 +1,9 @@
 package edu.codeschool.training.cloneAndImmutable.immutable;
 
 public class City implements Cloneable {
-    private String name;
-    private long countOfResidents;
-    private double surface;
+     String name;
+     long countOfResidents;
+     double surface;
 
     public City(String name, long countOfResidents, double surface) {
         this.name = name;
