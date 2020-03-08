@@ -1,5 +1,8 @@
 package HomeWork10.CustomString;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public final class CustomString {
     private final char[] character;
 
@@ -24,4 +27,24 @@ public final class CustomString {
         } return  String.valueOf(character);
 
     }
+    public int indexOf(int ch){
+        int a = 0;
+        for (int i = 0; i <character.length ; i++) {
+            if(Objects.equals(character[i], character[ch])){
+                a=i;break;
+            }
+        }
+        return a;
+    }
+    public int lastIndexOf(int ch){
+        int a = 0;
+        for (int i = character.length-1; i == 0; i++) {
+            if(Objects.equals(character[i], character[ch])){
+                a=i;break;
+            }
+        }
+        return a;
+
+    }
+
 }
