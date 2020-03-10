@@ -42,19 +42,18 @@ public class User {
 
     public static void main(String[] args) {
         User.App app = new App();
+        User.App app1 = new App();
+        User.App app2 = new App();
 
         app.makeUser("0", "0");
 
 
-        app.makeUser("1", "1");
 
-        app.makeUser("2", "2");
+        app1.makeUser("2", "2");
 
-        app.makeUser("3", "3");
+        app2.makeUser("3", "3");
 
-        app.makeUser("4", "4");
 
-        app.makeUser("5", "5");
 
     }
 
