@@ -1,4 +1,4 @@
-package Weeks;
+package HomeWork11.Week;
 
 public class AlarmClock {
     public void wakeUp(WeekDay weekDay) {
