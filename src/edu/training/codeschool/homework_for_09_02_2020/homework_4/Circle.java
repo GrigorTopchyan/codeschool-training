@@ -25,6 +25,8 @@ public class Circle extends Shape {
     public double getPerimeter(){
         return 2 * Math.PI * radius;
     }
+
+    //es methody animasta karas miangamic super.ToString() kanches
     public String getSuperString(){
         return super.toString();
     }

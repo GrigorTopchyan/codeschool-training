@@ -15,6 +15,7 @@ public class Square extends Rectangle {
         super(side, side);
     }
 
+    //es methody animasta
     public String getSuperRString(){
         return super.toString();
     }

@@ -49,6 +49,7 @@ public class Student {
     }
 
     public static String quantityOfObjects() {
+        //petq chi string veradarcni methody qanaky veradarcnelu hamara patasxanatu
         return "Student{Objects quality is equal to : }"+counter;
     }
 }
