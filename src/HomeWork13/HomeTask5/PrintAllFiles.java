@@ -2,20 +2,22 @@ package HomeWork13.HomeTask5;
 
 import java.io.File;
 
-public class PrintAllFiles extends File{
-    public PrintAllFiles(String pathname) {
-        super(pathname);
+public class PrintAllFiles {
+    public static void main(String[] args) {
+        File file = new File("C:\\Program Files");
+        PrintFilesName(file);
     }
+    public static void PrintFilesName(File file) {
+        if (file.isFile()) {
+            System.out.println(file.getName());
+            return;
+        } else if (file.isDirectory()) {
+            File[] files = file.listFiles();
+            if (files == null)return;
+            for (File f : files)
+            { PrintFilesName(f);
 
-    public static void printFiles(File path){
-        File [] file = path.listFiles();
-        for (File f:file
-             ) {if(f.isFile()){
-            System.out.println(f);
-        }else if(f.isDirectory()){
-                 printFiles(f);
-        }
-
+            }
         }
     }
 }
